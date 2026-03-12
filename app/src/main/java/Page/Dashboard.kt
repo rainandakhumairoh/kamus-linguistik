@@ -1,5 +1,9 @@
 package com.arabic.kamuslinguistik.Page
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -21,22 +25,19 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment.Companion.CenterStart
+import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -49,12 +50,20 @@ import com.arabic.kamuslinguistik.ui.theme.KamusLinguistikTheme
 
 @Composable
 fun HomeScreen() {
+    // State untuk sidebar visibility
+    val showSidebar = remember { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(color = Color(android.graphics.Color.parseColor("#ebebeb")))
     ) {
-        topbar()
+        topbar(
+            onMenuClick = {
+                showSidebar.value = true
+            }
+        )
+
         // Header dengan background warna teal
         Box(
             modifier = Modifier
@@ -112,11 +121,52 @@ fun HomeScreen() {
             Spacer(modifier = Modifier.height(16.dp))
         }
     }
+    // OVERLAY - Semi-transparent background saat sidebar terbuka
+    if (showSidebar.value) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(color = Color.Black.copy(alpha = 0.5f))
+                .clickable { showSidebar.value = false }
+        )
+    }
+
+
+    // SIDEBAR - Animasi slide in dari kanan
+    AnimatedVisibility(
+        visible = showSidebar.value,
+        enter = slideInHorizontally(
+            initialOffsetX = { -it },  // Slide dari kanan
+            animationSpec = tween(durationMillis = 300)
+        ),
+        exit = slideOutHorizontally(
+            targetOffsetX = { -it },  // Slide ke kanan
+            animationSpec = tween(durationMillis = 300)
+        )
+    ) {
+        Sidebar(
+            onClose = { showSidebar.value = false },
+            onDisimpanClick = {
+                // TODO: Handle Disimpan click
+                showSidebar.value = false
+            },
+            onPetunjukClick = {
+                // TODO: Handle Petunjuk Aplikasi click
+                showSidebar.value = false
+            },
+            onTentangClick = {
+                // TODO: Handle Tentang Aplikasi click
+                showSidebar.value = false
+            }
+        )
+    }
+
 }
 
 @Composable
-fun topbar() {
-        // Header dengan background warna teal
+fun topbar(
+    onMenuClick: () -> Unit
+) {
         Box(
             modifier = Modifier
                 .height(87.dp)
@@ -138,7 +188,7 @@ fun topbar() {
                         .width(32.dp)
                         .height(32.dp)
                         .offset(y = 25.dp)
-                        .clickable {},
+                        .clickable { onMenuClick() },
                     painter = painterResource(id = R.drawable.iconmenu),
                     contentDescription = "menu"
                 )
@@ -227,6 +277,128 @@ fun BagianCard(
     }
 }
 
+@Composable
+fun Sidebar(
+    onClose: () -> Unit,
+    onDisimpanClick: () -> Unit,
+    onPetunjukClick: () -> Unit,
+    onTentangClick: () -> Unit
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        // Sidebar container
+        Column(
+            modifier = Modifier
+                .fillMaxHeight()
+                .width(280.dp)
+                .background(color = Color.White)
+                .align(Alignment.TopStart)
+        ) {
+            // Close button
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                contentAlignment = Alignment.TopEnd
+            ) {
+                IconButton(
+                    onClick = onClose,
+                    modifier = Modifier
+                        .size(40.dp)
+                        .offset(y = 10.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Close,
+                        contentDescription = "Close",
+                        tint = Color(android.graphics.Color.parseColor("#206c7a")),
+                        modifier = Modifier
+                            .size(24.dp)
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Menu items
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(24.dp)
+            ) {
+                // Disimpan
+                SidebarMenuItem(
+                    icon = R.drawable.iconmenu,  // Gunakan icon drawable yang ada
+                    label = "Disimpan",
+                    onClick = onDisimpanClick
+                )
+
+                // Petunjuk Aplikasi
+                SidebarMenuItem(
+                    icon = R.drawable.iconmenu,  // Gunakan icon drawable yang ada
+                    label = "Petunjuk Aplikasi",
+                    onClick = onPetunjukClick
+                )
+
+                // Tentang Aplikasi
+                SidebarMenuItem(
+                    icon = R.drawable.iconmenu,  // Gunakan icon drawable yang ada
+                    label = "Tentang Aplikasi",
+                    onClick = onTentangClick
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun SidebarMenuItem(
+    icon: Int,
+    label: String,
+    onClick: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() }
+            .padding(vertical = 8.dp),
+        verticalAlignment = CenterVertically,
+        horizontalArrangement = Arrangement.Start
+    ) {
+        Icon(
+            painter = painterResource(id = icon),
+            contentDescription = label,
+            tint = Color(android.graphics.Color.parseColor("#206c7a")),
+            modifier = Modifier.size(24.dp)
+        )
+
+        Spacer(modifier = Modifier.width(16.dp))
+
+        Text(
+            text = label,
+            fontSize = 16.sp,
+            color = Color(android.graphics.Color.parseColor("#206c7a")),
+            fontWeight = FontWeight.Medium
+        )
+
+        Spacer(modifier = Modifier.height(1.dp))
+
+        Divider(modifier = Modifier.padding(top = 8.dp))
+    }
+}
+
+@Composable
+fun Divider(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(1.dp)
+            .background(color = Color(android.graphics.Color.parseColor("#206c7a")),
+            )
+    )
+}
 
 @Preview(showBackground = true)
 @Composable
