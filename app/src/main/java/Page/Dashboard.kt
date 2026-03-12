@@ -3,6 +3,7 @@ package com.arabic.kamuslinguistik.Page
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,21 +13,30 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment.Companion.CenterVertically
+import androidx.compose.ui.Alignment.Companion.CenterStart
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -42,9 +52,9 @@ fun HomeScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(rememberScrollState())
             .background(color = Color(android.graphics.Color.parseColor("#ebebeb")))
     ) {
+        topbar()
         // Header dengan background warna teal
         Box(
             modifier = Modifier
@@ -52,7 +62,7 @@ fun HomeScreen() {
                 .fillMaxWidth()
                 .background(color = Color(android.graphics.Color.parseColor("#206c7a")))
                 .padding(32.dp)
-                .padding(top = 42.dp),
+                .padding(top = 10.dp),
             contentAlignment = Alignment.Center
         ) {
             Column(
@@ -74,14 +84,16 @@ fun HomeScreen() {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .fillMaxHeight()
+                .padding(16.dp)
+                .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
             // Bagian 1
             BagianCard(
                 title = "Bagian 1",
                 description = "Istilah Arab-Indonesia, dilengkapi dengan penjelasan dan transkripsinya",
-                imageCount = 2,
+                characterImage = R.drawable.character1,
                 onLihatClick = {
                     // TODO: Navigate to Bagian 1
                 }
@@ -91,43 +103,54 @@ fun HomeScreen() {
             BagianCard(
                 title = "Bagian 2",
                 description = "Istilah linguistik dengan padanannya dalam bahasa Arab, Indonesia, Inggris, dan Mandarin",
-                imageCount = 4,
+                characterImage = R.drawable.character2,
                 onLihatClick = {
                     // TODO: Navigate to Bagian 2
                 }
             )
+
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
 
-@Preview
 @Composable
-fun topbar(){
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .verticalScroll(rememberScrollState())
-            .background(color = Color(android.graphics.Color.parseColor("#206c7a")))
-            .padding(start = 30.dp, end = 30.dp, top = 30.dp, bottom = 10.dp)
-        ,
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = CenterVertically
-    ) {
-        Image(
+fun topbar() {
+        // Header dengan background warna teal
+        Box(
             modifier = Modifier
-                .width(60.dp)
-                .height(60.dp),
-            painter = painterResource(id = R.drawable.logodashboard),
-            contentDescription = "Profile Image"
-        )
+                .height(87.dp)
+                .fillMaxWidth()
+                .background(color = Color(android.graphics.Color.parseColor("#206c7a")))
+                .padding(10.dp)
+                .padding(start = 20.dp, end = 20.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(),
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Image(
+                    modifier = Modifier
+                        .width(32.dp)
+                        .height(32.dp)
+                        .offset(y = 25.dp)
+                        .clickable {},
+                    painter = painterResource(id = R.drawable.iconmenu),
+                    contentDescription = "menu"
+                )
+            }
+        }
     }
-}
 
 @Composable
 fun BagianCard(
     title: String,
     description: String,
-    imageCount: Int,
+    characterImage: Int,
     onLihatClick: () -> Unit
 ) {
     Column(
@@ -172,12 +195,13 @@ fun BagianCard(
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            repeat(imageCount) { index ->
-                CharacterImage(index = index)
-                if (index < imageCount - 1) {
-                    Spacer(modifier = Modifier.size(16.dp))
-                }
-            }
+            Image(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(),
+                painter = painterResource(id = characterImage),
+                contentDescription = "Character Image"
+            )
         }
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -203,31 +227,6 @@ fun BagianCard(
     }
 }
 
-@Composable
-fun CharacterImage(index: Int) {
-    // Placeholder untuk karakter
-    // Ganti dengan actual image jika ada
-    Box(
-        modifier = Modifier
-            .size(60.dp)
-            .background(
-                color = when (index) {
-                    0 -> Color(0xFF4DB88D)  // Green
-                    1 -> Color(0xFF8B6B47)  // Brown
-                    2 -> Color(0xFF3B6B8B)  // Blue
-                    else -> Color(0xFF8B4B3B) // Red
-                },
-                shape = RoundedCornerShape(12.dp)
-            ),
-        contentAlignment = Alignment.Center
-    ) {
-        // TODO: Replace with actual character images
-        Text(
-            text = "👤",
-            fontSize = 32.sp
-        )
-    }
-}
 
 @Preview(showBackground = true)
 @Composable
