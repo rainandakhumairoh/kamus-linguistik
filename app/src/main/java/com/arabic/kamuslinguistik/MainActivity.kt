@@ -18,6 +18,9 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.arabic.kamuslinguistik.Page.HomeScreen
 import com.arabic.kamuslinguistik.ui.theme.KamusLinguistikTheme
 import kotlinx.coroutines.delay
+import androidx.navigation.compose.*
+import Page.Navigation
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +42,8 @@ fun MainScreen() {
     // State untuk mengontrol visibility splash screen
     val isSplashVisible = remember { mutableStateOf(true) }
 
+    val navController = rememberNavController()
+
     // Delay 2 detik sebelum hide splash screen
     LaunchedEffect(Unit) {
         delay(3000) // 5 detik
@@ -50,7 +55,7 @@ fun MainScreen() {
         SplashScreenContent()
     } else {
         // Tampilkan Home Screen
-        HomeScreen()
+        Navigation()
     }
 }
 
@@ -69,7 +74,10 @@ fun SplashScreenContent() {
 @Preview(showBackground = true)
 @Composable
 fun HomeScreenPreview() {
+    val navController = rememberNavController()
+
     KamusLinguistikTheme {
-        HomeScreen()
+        HomeScreen(navController)
+
     }
 }
