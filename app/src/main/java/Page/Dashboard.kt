@@ -53,6 +53,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 
 
+
 @Composable
 fun HomeScreen(navController: NavHostController) {
     // State untuk sidebar visibility
@@ -109,7 +110,7 @@ fun HomeScreen(navController: NavHostController) {
                 description = "Istilah Arab-Indonesia, dilengkapi dengan penjelasan dan transkripsinya",
                 characterImage = R.drawable.character1,
                 onLihatClick = {
-                    // TODO: Navigate to Bagian 1
+                    navController.navigate("ListIstilah1")
                 }
             )
 
@@ -245,7 +246,7 @@ fun BagianCard(
             lineHeight = 18.sp
         )
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         // Character Images Row
         Row(
@@ -262,7 +263,7 @@ fun BagianCard(
             )
         }
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         // Button
         Button(

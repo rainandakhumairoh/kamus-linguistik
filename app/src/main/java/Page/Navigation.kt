@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.arabic.kamuslinguistik.Page.Disimpan
 import com.arabic.kamuslinguistik.Page.HomeScreen
+import com.arabic.kamuslinguistik.Page.ListIstilah1
 import com.arabic.kamuslinguistik.Page.PetunjukApp
 import com.arabic.kamuslinguistik.Page.TentangApp
 
@@ -15,6 +16,12 @@ fun Navigation(){
     NavHost(navController = navController, startDestination = "HomeScreen") {
         composable("HomeScreen") {
             HomeScreen(
+                navController = navController
+            )
+        }
+
+        composable("ListIstilah1") {
+            ListIstilah1(
                 navController = navController
             )
         }
