@@ -41,7 +41,10 @@ import com.arabic.kamuslinguistik.R
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
+import com.arabic.kamuslinguistik.data.IstilahEntity1
+import com.arabic.kamuslinguistik.viewmodel.IstilahViewModel1
 
 data class Istilah(
     val istilahLatin: String,
@@ -75,8 +78,16 @@ val kategoriMap = mapOf(
 
 @Composable
 fun ListIstilah1(
-    navController: NavController
+    navController: NavController,
+    viewModel: IstilahViewModel1
 ) {
+    val context = LocalContext.current
+
+    LaunchedEffect(Unit) {
+        viewModel.seedDatabase1(context)
+    }
+
+    val istilahList1 by viewModel.istilahList1.collectAsState()
 
     Column(
         modifier = Modifier
@@ -87,7 +98,7 @@ fun ListIstilah1(
 
         HeaderSection(navController)
 
-        IstilahList(dummyIstilah)
+        IstilahList1(istilahList1)
 
     }
 }
@@ -303,7 +314,7 @@ fun DropdownKategoriHierarki() {
 
 
 @Composable
-fun IstilahList(data: List<Istilah>) {
+fun IstilahList1(data: List<IstilahEntity1>) {
 
     LazyColumn {
 
@@ -317,7 +328,7 @@ fun IstilahList(data: List<Istilah>) {
 }
 
 @Composable
-fun IstilahRow(item: Istilah) {
+fun IstilahRow(item: IstilahEntity1) {
 
     Column {
 
