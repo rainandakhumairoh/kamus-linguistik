@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -38,6 +39,9 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.arabic.kamuslinguistik.R
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.text.TextStyle
 
 data class Istilah(
     val istilahLatin: String,
@@ -50,6 +54,23 @@ val dummyIstilah = listOf(
     Istilah("Badiylun, alaw", "Alo", "بَدِيلٌ، أَلَو"),
     Istilah("Tatsaqqufun", "Akulturasi", "تَثَقُّف"),
     Istilah("Jumlatun", "Kalimat", "جُمْلَة")
+)
+
+val kategoriMap = mapOf(
+
+    "Mikrolinguistik" to listOf(
+        "Sintaksis",
+        "Morfologi",
+        "Semantik",
+        "Fonologi"
+    ),
+
+    "Makrolinguistik" to listOf(
+        "Pragmatik",
+        "Sosiolinguistik",
+        "Psikolinguistik",
+        "Antropolinguistik"
+    )
 )
 
 @Composable
@@ -91,13 +112,12 @@ fun HeaderSection(navController: NavController) {
                 tint = Color.White,
                 modifier = Modifier
                     .size(28.dp)
+                    .offset(y = 30.dp)
                     .clickable {
                         navController.popBackStack()
                     }
             )
         }
-
-        Spacer(modifier = Modifier.height(10.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -107,11 +127,9 @@ fun HeaderSection(navController: NavController) {
             Image(
                 painter = painterResource(R.drawable.character1),
                 contentDescription = null,
-                modifier = Modifier.size(60.dp)
+                modifier = Modifier.size(100.dp)
             )
         }
-
-        Spacer(modifier = Modifier.height(14.dp))
 
         SearchBar()
 
@@ -131,11 +149,12 @@ fun SearchBar() {
         TextField(
             value = "",
             onValueChange = {},
-            placeholder = { Text("Cari di sini") },
+            placeholder = { Text("Cari di sini")
+                TextStyle(fontSize = 12.sp)},
             modifier = Modifier
                 .weight(1f)
                 .height(50.dp),
-            shape = RoundedCornerShape(30.dp),
+            shape = RoundedCornerShape(50.dp),
             colors = TextFieldDefaults.colors(
                 unfocusedContainerColor = Color.White,
                 focusedContainerColor = Color.White
@@ -154,7 +173,7 @@ fun SearchBar() {
             Icon(
                 imageVector = Icons.Default.Search,
                 contentDescription = null,
-                tint = Color(0xFF206C7A)
+                tint = Color(android.graphics.Color.parseColor("#206c7a")),
             )
 
         }
@@ -164,6 +183,11 @@ fun SearchBar() {
 
 @Composable
 fun KategoriSection() {
+
+    var kategoriUtama by remember { mutableStateOf("Mikrolinguistik") }
+    var subKategori by remember { mutableStateOf("Pilih Subkategori") }
+
+    val subList = kategoriMap[kategoriUtama] ?: emptyList()
 
     Row(
         modifier = Modifier
@@ -178,43 +202,105 @@ fun KategoriSection() {
             fontSize = 14.sp
         )
 
-        Spacer(modifier = Modifier.width(6.dp))
+        Spacer(modifier = Modifier.width(15.dp))
 
-        DropdownKategori("Mikrolinguistik")
-
-        Spacer(modifier = Modifier.width(6.dp))
-
-        DropdownKategori("Makrolinguistik")
-
+        DropdownKategoriHierarki()
     }
 }
 
-@Composable
-fun DropdownKategori(text: String) {
 
-    Box(
-        modifier = Modifier
-            .background(Color.White, RoundedCornerShape(50.dp))
-            .padding(horizontal = 10.dp, vertical = 4.dp)
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun DropdownKategoriHierarki() {
+
+    var expanded by remember { mutableStateOf(false) }
+    var selectedText by remember { mutableStateOf("Pilih Kategori") }
+    var currentMenu by remember { mutableStateOf("utama") }
+
+    ExposedDropdownMenuBox(
+        expanded = expanded,
+        onExpandedChange = { expanded = !expanded }
     ) {
 
-        Row(
-            verticalAlignment = Alignment.CenterVertically
+        val textColor =
+            if (selectedText == "Pilih Kategori") Color.Gray
+            else Color(android.graphics.Color.parseColor("#206c7a"))
+
+        TextField(
+            value = selectedText,
+            onValueChange = {},
+            readOnly = true,
+            textStyle = TextStyle(fontSize = 12.sp, color = textColor),
+            modifier = Modifier
+                .menuAnchor()
+                .width(220.dp)
+                .height(45.dp),
+            shape = RoundedCornerShape(50.dp),
+            trailingIcon = {
+                ExposedDropdownMenuDefaults.TrailingIcon(expanded)
+            },
+            colors = TextFieldDefaults.colors(
+                unfocusedContainerColor = Color.White,
+                focusedContainerColor = Color.White
+            )
+        )
+
+        ExposedDropdownMenu(
+            expanded = expanded,
+            onDismissRequest = {
+                expanded = false
+                currentMenu = "utama"
+            },
+            modifier = Modifier.background(
+                Color(android.graphics.Color.parseColor("#ffffff")))
         ) {
 
-            Text(text
-                , color = Color(0xFF206C7A),
-                fontSize = 12.sp
-            )
+            if (currentMenu == "utama") {
 
-            Icon(
-                imageVector = Icons.Default.ArrowDropDown,
-                contentDescription = null
-            )
+                kategoriMap.keys.forEach {
+
+                    DropdownMenuItem(
+                        text = { Text(it, color = Color(android.graphics.Color.parseColor("#206c7a"))) },
+                        onClick = {
+                            currentMenu = it
+                        }
+                    )
+
+                }
+
+            } else {
+
+                kategoriMap[currentMenu]?.forEach {
+
+                    DropdownMenuItem(
+                        text = { Text(it, color = Color(android.graphics.Color.parseColor("#206c7a"))) },
+                        onClick = {
+                            selectedText = it
+                            expanded = false
+                            currentMenu = "utama"
+                        }
+                    )
+
+                }
+
+                Divider(
+                    color = Color(android.graphics.Color.parseColor("#206c7a")),
+                    thickness = 1.dp
+                )
+
+                DropdownMenuItem(
+                    text = { Text("← Kembali", color = Color(android.graphics.Color.parseColor("#206c7a"))) },
+                    onClick = {
+                        currentMenu = "utama"
+                    }
+                )
+
+            }
+
         }
-
     }
 }
+
 
 @Composable
 fun IstilahList(data: List<Istilah>) {
