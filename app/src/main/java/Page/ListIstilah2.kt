@@ -51,6 +51,7 @@ import com.arabic.kamuslinguistik.R
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import android.content.Context
+import androidx.compose.material.icons.filled.Close
 
 data class IstilahData2(
     val istilahInggris: String,
@@ -66,17 +67,23 @@ data class IstilahData2(
 
 val kategoriMap2 = mapOf(
     "Mikrolinguistik" to listOf(
+        "Fonetik/Fonologi",
         "Sintaksis",
         "Morfologi",
         "Semantik",
-        "Fonologi",
-        "Fonetik/Fonologi"
+        "Analisis Wacana"
     ),
     "Makrolinguistik" to listOf(
         "Pragmatik",
         "Sosiolinguistik",
         "Psikolinguistik",
-        "Antropolinguistik"
+        "Leksikologi/Leksikografi",
+        "Stilistika",
+        "Neurolinguistik",
+        "Linguistik Terapan"
+    ),
+    "All/General" to listOf(
+        "All/General"
     )
 )
 
@@ -159,6 +166,7 @@ fun ListIstilah2(navController: NavController, context: Context) {
             navController,
             onKategoriChange = { selectedKategori = it },
             onSearchChange = { searchText = it },
+            onResetFilter = { selectedKategori = null },
             selectedKategori = selectedKategori,
             searchText = searchText
         )
@@ -181,6 +189,7 @@ fun HeaderSection2(
     navController: NavController,
     onKategoriChange: (String) -> Unit,
     onSearchChange: (String) -> Unit,
+    onResetFilter: () -> Unit,
     selectedKategori: String?,
     searchText: String
 ) {
@@ -217,7 +226,7 @@ fun HeaderSection2(
 
         SearchBar2(onSearchChange, searchText)
 
-        KategoriSection2(onKategoriChange, selectedKategori)
+        KategoriSection2(onKategoriChange, onResetFilter, selectedKategori)
     }
 }
 
@@ -259,22 +268,47 @@ fun SearchBar2(onSearchChange: (String) -> Unit, searchText: String) {
 }
 
 @Composable
-fun KategoriSection2(onKategoriChange: (String) -> Unit, selectedKategori: String?) {
+fun KategoriSection2(onKategoriChange: (String) -> Unit, onResetFilter: () -> Unit, selectedKategori: String?) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 10.dp, vertical = 20.dp),
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Text(
-            text = "Kategori:",
-            color = Color.White,
-            fontSize = 14.sp
-        )
+        Row(
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "Kategori:",
+                color = Color.White,
+                fontSize = 14.sp
+            )
 
-        Spacer(modifier = Modifier.width(15.dp))
+            Spacer(modifier = Modifier.width(15.dp))
 
-        DropdownKategoriHierarki2(onKategoriChange, selectedKategori)
+            DropdownKategoriHierarki2(onKategoriChange, selectedKategori)
+        }
+
+        // ✅ TOMBOL RESET FILTER (BARU!)
+        if (selectedKategori != null && selectedKategori != "Pilih Kategori") {
+            Box(
+                modifier = Modifier
+                    .size(36.dp)
+                    .background(Color.White, CircleShape)
+                    .clickable {
+                        onResetFilter()
+                    },
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Close,
+                    contentDescription = "Reset Filter",
+                    tint = Color(android.graphics.Color.parseColor("#206c7a")),
+                    modifier = Modifier.size(20.dp)
+                )
+            }
+        }
     }
 }
 
@@ -284,6 +318,10 @@ fun DropdownKategoriHierarki2(onKategoriChange: (String) -> Unit, selectedKatego
     var expanded by remember { mutableStateOf(false) }
     var selectedText by remember { mutableStateOf(selectedKategori ?: "Pilih Kategori") }
     var currentMenu by remember { mutableStateOf("utama") }
+
+    remember(selectedKategori) {
+        selectedText = selectedKategori ?: "Pilih Kategori"
+    }
 
     ExposedDropdownMenuBox(
         expanded = expanded,

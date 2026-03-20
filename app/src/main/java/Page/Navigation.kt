@@ -7,7 +7,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.arabic.kamuslinguistik.Page.Disimpan
 import com.arabic.kamuslinguistik.Page.HomeScreen
-import com.arabic.kamuslinguistik.Page.ListIstilah
 import com.arabic.kamuslinguistik.Page.ListIstilah1
 import com.arabic.kamuslinguistik.Page.ListIstilah2
 import com.arabic.kamuslinguistik.Page.PetunjukApp

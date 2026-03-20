@@ -690,7 +690,7 @@
     "arti": "Akar kata",
     "penjelasan": "جدر الكلمة هي الكلمة أساسية تحتوي على معاني أساسية وتشكل الأساس لتكوين الكلم ات .\n\njidzru \"l-kalimati hiya \"1-kalimatu Pasasiyyatun tahtawi Sala masani Pasasiyyatin wa tušakkilu 'I-asāsa litakwini 'l-kalimati \n\nAkar kata adalah inti kata yang mengandung makna inti dan menjadi dasar pembentukan kata",
     "istilahArab": "جذر الكلمة",
-    "kategoriIstilah": "Morfologi, Leksikologi"
+    "kategoriIstilah": "Morfologi, Leksikologi/Leksikografi"
   },
   {
     "transkripsiArab": "jumlatu 'sy-syarthiyyah",
@@ -1201,7 +1201,7 @@
     "arti": "Leksikologi",
     "penjelasan": "فرع دلالي يدرس جميع مكونات اللغة التي تحتوي على معلومات حول استخدام الكلمات مع معانيها\n\nfarçu dilālī yadrusu jamisi mukawwināti 'Ilugati 'llati tahtawi Salā mašlūmāt haula 'stixdāmi 'Ikalimāti masa malānīia\n\nCabang semantik yang mempelajari tentang semua komponen bahasa yang memiliki informasi mengenai pemakaian kata beserta dengan maknanya",
     "istilahArab": "علم المعجم",
-    "kategoriIstilah": "Semantik, Leksikologi"
+    "kategoriIstilah": "Semantik, Leksikologi/Leksikografi"
   },
   {
     "transkripsiArab": "il-mu 'lluģati ijtimasi",
@@ -1306,7 +1306,7 @@
     "arti": "Alonim/Variabel nama",
     "penjelasan": "إِسْمٌ وَاحِدٌ مِنْ عِدَّةِ أَسْمَاءٍ ، لَا يُؤَدِّي إِلَى\nمُتَغَيَّرُ اسْمِي\nتَغْيِيرِ الدَّلالَةِ ، مِثْلَ : مَكَّةَ وَ بَكَةٍ وَأَمُّ القُرَى / المَدِينَةِ وَ يَثْرَبُ / سُرَّ مَنْ رَأَى وَ سامراء.\n\nSalah satu dari beberapa nama, tidak mengubah konotasi, seperti: Mekah, Bakkah, Ummul Quro/ Madinah, Yatsrib",
     "istilahArab": "مُتَغَيَّرُ اسْمِي",
-    "kategoriIstilah": "Leksikologi, Semantik"
+    "kategoriIstilah": "Leksikologi/Leksikografi, Semantik"
   },
   {
     "transkripsiArab": "Fardhiyyatu 'l-hadafi 's-sam'iyyi",
@@ -1439,14 +1439,14 @@
     "arti": "Kata",
     "penjelasan": "الكلمة هي اللفظة التي تتركب من بعض الحروف الهجائية وتدل على معنى جزئي (مفردة)\n\nPal-kalimatu hiya 'l-lafzatu 'l-lati tatarakkabu min baldi 'l-hurüfi hijā?iyyati wa tadullu Sala masno juz?iyyin (mufrodin)\n\nKata adalah sebuah lafadz yang tersusun dari beberapa huruf hijaiyyah yang menunjukkan makna tunggal",
     "istilahArab": "الكلمة",
-    "kategoriIstilah": "Morfologi, Sintaksis, Semantik, Leksikologi"
+    "kategoriIstilah": "Morfologi, Sintaksis, Semantik, Leksikologi/Leksikografi"
   },
   {
     "transkripsiArab": "Kalimatun dakhilatun",
     "arti": "Kata asing/Kata serapan",
     "penjelasan": "كَلِمَةٌ أَخَذَتْهَا لُغَةٌ مِنْ لُغَةٍ أُخْرَى، وَمِنْ أَمْثَلَةِ ذَلِكَ كَلِمَةُ mirage بِمَعْنَى سَرَابٌ، أَوْ شَيْءٍ وَهْمِي الَّتِي دَخَلَتْ الْإِنْجِلِيزِيَّةَ مِنْ الْفَرَنْسِيَّةِ، وَكَلِمَةُ mirador بِمَعْنَى شُرْفَةٍ أَوْ غُرْفَةٍ نَائِيَةِ الَّتِي دَخَلَتْ الْإِنْجِلِيزِيَّةَ مِنْ الْإِسْبَانِيَّةِ.\n\nKata yang diambil oleh suatu bahasa dari bahasa lain, misalnya kata mirage yang berarti (fatamorgana, atau benda imajiner) yang masuk ke bahasa Inggris dari bahasa Prancis, dan kata mirador yang berarti balkon atau ruangan terpencil yang masuk ke bahasa Inggris dari bahasa Spanyol.",
     "istilahArab": "كَلِمَةٌ  دَخِيلَةٌ",
-    "kategoriIstilah": "Leksikologi"
+    "kategoriIstilah": "Leksikologi/Leksikografi"
   },
   {
     "transkripsiArab": "kriyül",
@@ -1572,7 +1572,7 @@
     "arti": "Kata/Istilah",
     "penjelasan": "أصغر الوحدات التي تم الحصول عليها بعد الجملة مقسمة إلى أجزاء ، وتحتوي على فكرة\nPasgaru 'l-wahidāti 'l-lati tamma 'I-husül Salayha basda 'l-jumlati muqassamatan ?ilā ?ajzā?i, watahtawi Salā fakratin\nkata adalah satuan-satuan terkecil yang diperoleh sesudah sebuah kalimat dibagi atas bagian-bagiannya, dan mengandung sebuah ide",
     "istilahArab": "مُفردة",
-    "kategoriIstilah": "Leksikologi, Sintaksis, Morfologi, Semantik"
+    "kategoriIstilah": "Leksikologi/Leksikografi, Sintaksis, Morfologi, Semantik"
   },
   {
     "transkripsiArab": "Murakkab",
