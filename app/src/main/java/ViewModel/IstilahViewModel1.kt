@@ -15,18 +15,16 @@ class IstilahViewModel1(
 ) : ViewModel() {
 
     fun seedDatabase1(context: Context) {
-
         viewModelScope.launch {
-
-            val data = DatabaseSeeder1.loadIstilahBagian1(context)
-
-            dao.insertAll(data)
-
+            val count = dao.countData()
+            if (count == 0) {
+                val data = DatabaseSeeder1.loadIstilahBagian1(context)
+                dao.insertAll(data)
+            }
         }
-
     }
 
-    val istilahList1 = dao.getAllIstilah()
+    val istilahList1 = dao.getAll()
         .stateIn(
             viewModelScope,
             SharingStarted.WhileSubscribed(5000),

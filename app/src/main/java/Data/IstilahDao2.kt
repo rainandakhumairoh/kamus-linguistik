@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 interface IstilahDao2 {
 
     @Query("SELECT * FROM istilah_bagian2 ORDER BY istilahLatin ASC")
-    fun getAllIstilah(): Flow<List<IstilahEntity2>>
+    fun getAll(): Flow<List<IstilahEntity2>>
 
     @Insert
     suspend fun insertAll(data: List<IstilahEntity2>)

@@ -1,18 +1,22 @@
 package Page
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.arabic.kamuslinguistik.Page.Disimpan
 import com.arabic.kamuslinguistik.Page.HomeScreen
+import com.arabic.kamuslinguistik.Page.ListIstilah
 import com.arabic.kamuslinguistik.Page.ListIstilah1
+import com.arabic.kamuslinguistik.Page.ListIstilah2
 import com.arabic.kamuslinguistik.Page.PetunjukApp
 import com.arabic.kamuslinguistik.Page.TentangApp
 
 @Composable
 fun Navigation(){
     val navController = rememberNavController()
+
     NavHost(navController = navController, startDestination = "HomeScreen") {
         composable("HomeScreen") {
             HomeScreen(
@@ -22,7 +26,15 @@ fun Navigation(){
 
         composable("ListIstilah1") {
             ListIstilah1(
-                navController = navController
+                navController = navController,
+                context = LocalContext.current
+            )
+        }
+
+        composable("ListIstilah2") {
+            ListIstilah2(
+                navController = navController,
+                context = LocalContext.current
             )
         }
 
@@ -43,7 +55,5 @@ fun Navigation(){
                 navController = navController
             )
         }
-
     }
-
-    }
+}

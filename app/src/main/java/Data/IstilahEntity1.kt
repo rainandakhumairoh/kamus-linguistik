@@ -9,7 +9,7 @@ data class IstilahEntity1(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
-    val istilahLatin: String,
+    val transkripsiArab: String,
     val arti: String,
     val penjelasan: String,
     val istilahArab: String,

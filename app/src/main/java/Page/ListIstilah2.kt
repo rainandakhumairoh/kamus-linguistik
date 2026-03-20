@@ -52,107 +52,110 @@ import kotlinx.coroutines.launch
 import org.json.JSONArray
 import android.content.Context
 
-// ✅ DATA CLASS UNTUK BAGIAN 1 (5 fields)
-data class IstilahData1(
-    val transkripsiArab: String,
+data class IstilahData2(
+    val istilahInggris: String,
+    val prononInggris: String,
     val arti: String,
-    val penjelasan: String,
     val istilahArab: String,
+    val transkripsiArab: String,
+    val istilahMandarin: String,
+    val transkripsiMandarin: String,
+    val prononMandarin: String,
     val kategoriIstilah: String
 )
 
-val kategoriMap1 = mapOf(
+val kategoriMap2 = mapOf(
     "Mikrolinguistik" to listOf(
         "Sintaksis",
         "Morfologi",
         "Semantik",
-        "Fonetik/Fonologi",
-        "Stilistika",
-        "Leksikologi"
+        "Fonologi",
+        "Fonetik/Fonologi"
     ),
     "Makrolinguistik" to listOf(
         "Pragmatik",
         "Sosiolinguistik",
         "Psikolinguistik",
-        "Antropolinguistik",
-        "Neurolinguistik",
-        "Linguistik Terapan"
+        "Antropolinguistik"
     )
 )
 
-// ✅ Load JSON dari assets
-fun loadIstilahFromJson1(context: Context): List<IstilahData1> {
+// untuk membaca JSON dari assets
+fun loadIstilahFromJson2(context: Context): List<IstilahData2> {
     return try {
-        val jsonString = context.assets.open("istilah_bagian1.json").bufferedReader().use {
+        val jsonString = context.assets.open("istilah_bagian2.json").bufferedReader().use {
             it.readText()
         }
         val jsonArray = JSONArray(jsonString)
-        val istilahList1 = mutableListOf<IstilahData1>()
+        val istilahList2 = mutableListOf<IstilahData2>()
 
         for (i in 0 until jsonArray.length()) {
             val jsonObject = jsonArray.getJSONObject(i)
-            val istilah1 = IstilahData1(
-                transkripsiArab = jsonObject.optString("transkripsiArab", ""),
+            val istilah2 = IstilahData2(
+                istilahInggris = jsonObject.optString("istilahInggris", ""),
+                prononInggris = jsonObject.optString("prononInggris", ""),
                 arti = jsonObject.optString("arti", ""),
-                penjelasan = jsonObject.optString("penjelasan", ""),
                 istilahArab = jsonObject.optString("istilahArab", ""),
+                transkripsiArab = jsonObject.optString("transkripsiArab", ""),
+                istilahMandarin = jsonObject.optString("istilahMandarin", ""),
+                transkripsiMandarin = jsonObject.optString("transkripsiMandarin", ""),
+                prononMandarin = jsonObject.optString("prononMandarin", ""),
                 kategoriIstilah = jsonObject.optString("kategoriIstilah", "")
             )
-            istilahList1.add(istilah1)
+            istilahList2.add(istilah2)
         }
-        istilahList1
+        istilahList2
     } catch (e: Exception) {
         e.printStackTrace()
         emptyList()
     }
 }
 
-// ✅ Filter berdasarkan kategori dan pencarian
-fun filterIstilahData1(
-    data: List<IstilahData1>,
+// Filter berdasarkan kategori dan pencarian
+fun filterIstilahData2(
+    data: List<IstilahData2>,
     kategori: String? = null,
     searchText: String = ""
-): List<IstilahData1> {
+): List<IstilahData2> {
     return data.filter { item ->
         val matchKategori = kategori == null ||
                 kategori == "Pilih Kategori" ||
                 item.kategoriIstilah.contains(kategori, ignoreCase = true)
 
         val matchSearch = searchText.isEmpty() ||
-                item.transkripsiArab.contains(searchText, ignoreCase = true) ||
+                item.istilahInggris.contains(searchText, ignoreCase = true) ||
                 item.arti.contains(searchText, ignoreCase = true) ||
-                item.istilahArab.contains(searchText, ignoreCase = true) ||
-                item.penjelasan.contains(searchText, ignoreCase = true)
+                item.istilahArab.contains(searchText, ignoreCase = true)
 
         matchKategori && matchSearch
     }
 }
 
 @Composable
-fun ListIstilah1(navController: NavController, context: Context) {
-    var allData by remember { mutableStateOf<List<IstilahData1>>(emptyList()) }
+fun ListIstilah2(navController: NavController, context: Context) {
+    var allData by remember { mutableStateOf<List<IstilahData2>>(emptyList()) }
     var isLoading by remember { mutableStateOf(true) }
     var selectedKategori by remember { mutableStateOf<String?>(null) }
     var searchText by remember { mutableStateOf("") }
     val scope = rememberCoroutineScope()
 
-    // ✅ Load data dari JSON saat pertama kali
+    // Load data dari JSON saat pertama kali
     remember {
         scope.launch {
-            allData = loadIstilahFromJson1(context)
+            allData = loadIstilahFromJson2(context)
             isLoading = false
         }
         Unit
     }
 
-    val displayData1 = filterIstilahData1(allData, selectedKategori, searchText)
+    val displayData2 = filterIstilahData2(allData, selectedKategori, searchText)
 
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(color = Color(android.graphics.Color.parseColor("#ebebeb")))
     ) {
-        HeaderSection1(
+        HeaderSection2(
             navController,
             onKategoriChange = { selectedKategori = it },
             onSearchChange = { searchText = it },
@@ -168,13 +171,13 @@ fun ListIstilah1(navController: NavController, context: Context) {
                 CircularProgressIndicator(color = Color(android.graphics.Color.parseColor("#206c7a")))
             }
         } else {
-            IstilahList1(displayData1)
+            IstilahList2(displayData2)
         }
     }
 }
 
 @Composable
-fun HeaderSection1(
+fun HeaderSection2(
     navController: NavController,
     onKategoriChange: (String) -> Unit,
     onSearchChange: (String) -> Unit,
@@ -212,14 +215,14 @@ fun HeaderSection1(
             )
         }
 
-        SearchBar1(onSearchChange, searchText)
+        SearchBar2(onSearchChange, searchText)
 
-        KategoriSection1(onKategoriChange, selectedKategori)
+        KategoriSection2(onKategoriChange, selectedKategori)
     }
 }
 
 @Composable
-fun SearchBar1(onSearchChange: (String) -> Unit, searchText: String) {
+fun SearchBar2(onSearchChange: (String) -> Unit, searchText: String) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
@@ -256,7 +259,7 @@ fun SearchBar1(onSearchChange: (String) -> Unit, searchText: String) {
 }
 
 @Composable
-fun KategoriSection1(onKategoriChange: (String) -> Unit, selectedKategori: String?) {
+fun KategoriSection2(onKategoriChange: (String) -> Unit, selectedKategori: String?) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -271,13 +274,13 @@ fun KategoriSection1(onKategoriChange: (String) -> Unit, selectedKategori: Strin
 
         Spacer(modifier = Modifier.width(15.dp))
 
-        DropdownKategoriHierarki1(onKategoriChange, selectedKategori)
+        DropdownKategoriHierarki2(onKategoriChange, selectedKategori)
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DropdownKategoriHierarki1(onKategoriChange: (String) -> Unit, selectedKategori: String?) {
+fun DropdownKategoriHierarki2(onKategoriChange: (String) -> Unit, selectedKategori: String?) {
     var expanded by remember { mutableStateOf(false) }
     var selectedText by remember { mutableStateOf(selectedKategori ?: "Pilih Kategori") }
     var currentMenu by remember { mutableStateOf("utama") }
@@ -318,7 +321,7 @@ fun DropdownKategoriHierarki1(onKategoriChange: (String) -> Unit, selectedKatego
             modifier = Modifier.background(Color.White)
         ) {
             if (currentMenu == "utama") {
-                kategoriMap1.keys.forEach { kategoriUtama ->
+                kategoriMap2.keys.forEach { kategoriUtama ->
                     DropdownMenuItem(
                         text = {
                             Text(
@@ -332,7 +335,7 @@ fun DropdownKategoriHierarki1(onKategoriChange: (String) -> Unit, selectedKatego
                     )
                 }
             } else {
-                kategoriMap1[currentMenu]?.forEach { subKategori ->
+                kategoriMap2[currentMenu]?.forEach { subKategori ->
                     DropdownMenuItem(
                         text = {
                             Text(
@@ -371,7 +374,7 @@ fun DropdownKategoriHierarki1(onKategoriChange: (String) -> Unit, selectedKatego
 }
 
 @Composable
-fun IstilahList1(data: List<IstilahData1>) {
+fun IstilahList2(data: List<IstilahData2>) {
     if (data.isEmpty()) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -382,14 +385,14 @@ fun IstilahList1(data: List<IstilahData1>) {
     } else {
         LazyColumn {
             items(data) { item ->
-                IstilahRow1(item)
+                IstilahRow2(item)
             }
         }
     }
 }
 
 @Composable
-fun IstilahRow1(item: IstilahData1) {
+fun IstilahRow2(item: IstilahData2) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -404,8 +407,8 @@ fun IstilahRow1(item: IstilahData1) {
             verticalAlignment = Alignment.Top
         ) {
             Text(
-                text = item.transkripsiArab,
-                fontSize = 12.sp,
+                text = item.istilahInggris,
+                fontSize = 14.sp,
                 color = Color(android.graphics.Color.parseColor("#206c7a")),
             )
 

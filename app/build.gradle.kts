@@ -57,6 +57,9 @@ dependencies {
     implementation ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-ktx:2.6.1")
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation("org.jetbrains:annotations:23.0.0")
+    implementation("org.json:json:20231013")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.material3)
@@ -68,4 +71,7 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    configurations.all {
+        exclude(group = "com.intellij", module = "annotations")
+    }
 }

@@ -120,7 +120,7 @@ fun HomeScreen(navController: NavHostController) {
                 description = "Istilah linguistik dengan padanannya dalam bahasa Arab, Indonesia, Inggris, dan Mandarin",
                 characterImage = R.drawable.character2,
                 onLihatClick = {
-                    // TODO: Navigate to Bagian 2
+                    navController.navigate("ListIstilah2")
                 }
             )
 

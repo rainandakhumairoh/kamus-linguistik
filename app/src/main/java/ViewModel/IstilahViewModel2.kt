@@ -27,7 +27,7 @@ class IstilahViewModel2(
 
     }
 
-    val istilahList2 = dao.getAllIstilah()
+    val istilahList2 = dao.getAll()
         .stateIn(
             viewModelScope,
             SharingStarted.WhileSubscribed(5000),
