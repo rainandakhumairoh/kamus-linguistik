@@ -51,6 +51,7 @@ import com.arabic.kamuslinguistik.R
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import android.content.Context
+import android.net.Uri
 import androidx.compose.material.icons.filled.Close
 
 data class IstilahData2(
@@ -179,7 +180,7 @@ fun ListIstilah2(navController: NavController, context: Context) {
                 CircularProgressIndicator(color = Color(android.graphics.Color.parseColor("#206c7a")))
             }
         } else {
-            IstilahList2(displayData2)
+            IstilahList2(displayData2, navController)
         }
     }
 }
@@ -412,7 +413,7 @@ fun DropdownKategoriHierarki2(onKategoriChange: (String) -> Unit, selectedKatego
 }
 
 @Composable
-fun IstilahList2(data: List<IstilahData2>) {
+fun IstilahList2(data: List<IstilahData2>, navController: NavController) {
     if (data.isEmpty()) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -423,20 +424,23 @@ fun IstilahList2(data: List<IstilahData2>) {
     } else {
         LazyColumn {
             items(data) { item ->
-                IstilahRow2(item)
+                IstilahRow2(item, navController)
             }
         }
     }
 }
 
 @Composable
-fun IstilahRow2(item: IstilahData2) {
+fun IstilahRow2(item: IstilahData2, navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(14.dp)
+            .clickable {
+                val route = "detailIstilah2/${Uri.encode(item.istilahInggris)}/${Uri.encode(item.prononInggris)}/${Uri.encode(item.arti)}/${Uri.encode(item.istilahArab)}/${Uri.encode(item.transkripsiArab)}/${Uri.encode(item.istilahMandarin)}/${Uri.encode(item.transkripsiMandarin)}/${Uri.encode(item.prononMandarin)}/${Uri.encode(item.kategoriIstilah)}"
+                navController.navigate(route)
+            }
     ) {
-        // ✅ Header: Transkripsi Arab (kiri) + Istilah Arab (kanan)
         Row(
             modifier = Modifier
                 .fillMaxWidth()

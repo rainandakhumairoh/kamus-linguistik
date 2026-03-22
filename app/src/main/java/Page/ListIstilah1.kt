@@ -51,6 +51,7 @@ import com.arabic.kamuslinguistik.R
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import android.content.Context
+import android.net.Uri
 import androidx.compose.material.icons.filled.Close
 
 // ✅ DATA CLASS UNTUK BAGIAN 1 (5 fields)
@@ -173,7 +174,7 @@ fun ListIstilah1(navController: NavController, context: Context) {
                 CircularProgressIndicator(color = Color(android.graphics.Color.parseColor("#206c7a")))
             }
         } else {
-            IstilahList1(displayData1)
+            IstilahList1(displayData1, navController)
         }
     }
 }
@@ -406,7 +407,7 @@ fun DropdownKategoriHierarki1(onKategoriChange: (String) -> Unit, selectedKatego
 }
 
 @Composable
-fun IstilahList1(data: List<IstilahData1>) {
+fun IstilahList1(data: List<IstilahData1>, navController: NavController) {
     if (data.isEmpty()) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -417,20 +418,23 @@ fun IstilahList1(data: List<IstilahData1>) {
     } else {
         LazyColumn {
             items(data) { item ->
-                IstilahRow1(item)
+                IstilahRow1(item, navController)
             }
         }
     }
 }
 
 @Composable
-fun IstilahRow1(item: IstilahData1) {
+fun IstilahRow1(item: IstilahData1, navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(14.dp)
+            .clickable {
+                val route = "detailIstilah1/${Uri.encode(item.transkripsiArab)}/${Uri.encode(item.arti)}/${Uri.encode(item.penjelasan)}/${Uri.encode(item.istilahArab)}/${Uri.encode(item.kategoriIstilah)}"
+                navController.navigate(route)
+            }
     ) {
-        // ✅ Header: Transkripsi Arab (kiri) + Istilah Arab (kanan)
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -453,7 +457,6 @@ fun IstilahRow1(item: IstilahData1) {
             )
         }
 
-        // ✅ Arti (Makna)
         Text(
             text = item.arti,
             fontSize = 14.sp,
@@ -462,8 +465,6 @@ fun IstilahRow1(item: IstilahData1) {
             modifier = Modifier.padding(bottom = 8.dp)
         )
 
-
-        // ✅ Kategori (Tag/Label)
         Text(
             text = item.kategoriIstilah,
             fontSize = 10.sp,
