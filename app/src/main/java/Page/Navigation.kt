@@ -11,7 +11,8 @@ import com.arabic.kamuslinguistik.Page.ListIstilah1
 import com.arabic.kamuslinguistik.Page.ListIstilah2
 import com.arabic.kamuslinguistik.Page.PetunjukApp
 import com.arabic.kamuslinguistik.Page.TentangApp
-import Object.*
+import com.arabic.kamuslinguistik.Page.DetailIstilahBagian1
+import com.arabic.kamuslinguistik.Page.DetailIstilahBagian2
 
 @Composable
 fun Navigation(){

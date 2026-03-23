@@ -1,5 +1,9 @@
-package Object
+package com.arabic.kamuslinguistik.Page
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
+import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -20,28 +24,23 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-
-// ✅ DATA CLASS UNTUK DETAIL BAGIAN 1
-data class DetailIstilah1(
-    val transkripsiArab: String,
-    val arti: String,
-    val penjelasan: String,
-    val istilahArab: String,
-    val kategoriIstilah: String
-)
 
 @Composable
 fun DetailIstilahBagian1(
@@ -52,7 +51,7 @@ fun DetailIstilahBagian1(
     istilahArab: String?,
     kategoriIstilah: String?
 ) {
-    val istilah = DetailIstilah1(
+    val istilah = DetailIstilah1Data(
         transkripsiArab = transkripsiArab ?: "",
         arti = arti ?: "",
         penjelasan = penjelasan ?: "",
@@ -104,7 +103,7 @@ fun HeaderDetail1(navController: NavController) {
 }
 
 @Composable
-fun DetailContent1(istilah: DetailIstilah1) {
+fun DetailContent1(istilah: DetailIstilah1Data) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -244,14 +243,17 @@ fun DetailContent1(istilah: DetailIstilah1) {
         Spacer(modifier = Modifier.height(24.dp))
 
         // ✅ ACTION BUTTONS
-        ActionButtonsBagian1()
+        ActionButtonsBagian1(istilah)
 
         Spacer(modifier = Modifier.height(40.dp))
     }
 }
 
 @Composable
-fun ActionButtonsBagian1() {
+fun ActionButtonsBagian1(istilah: DetailIstilah1Data) {
+    val context = LocalContext.current
+    val isSaved = remember { mutableStateOf(isIstilahSaved(context, istilah.istilahArab)) }
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -265,7 +267,13 @@ fun ActionButtonsBagian1() {
                 .size(45.dp)
                 .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
                 .clickable {
-                    // TODO: Implement copy to clipboard
+                    val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                    val clip = ClipData.newPlainText(
+                        "Istilah",
+                        "${istilah.istilahArab}\n${istilah.transkripsiArab}\n${istilah.arti}"
+                    )
+                    clipboard.setPrimaryClip(clip)
+                    Toast.makeText(context, "Istilah disalin!", Toast.LENGTH_SHORT).show()
                 },
             contentAlignment = Alignment.Center
         ) {
@@ -283,14 +291,32 @@ fun ActionButtonsBagian1() {
         Box(
             modifier = Modifier
                 .size(45.dp)
-                .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
+                .background(
+                    Color(android.graphics.Color.parseColor("#206c7a")),
+                    CircleShape
+                )
                 .clickable {
-                    // TODO: Implement bookmark
+                    if (isSaved.value) {
+                        deleteIstilahFromPreferences(context, istilah.istilahArab)
+                        isSaved.value = false
+                        Toast.makeText(context, "Istilah dihapus dari simpanan", Toast.LENGTH_SHORT).show()
+                    } else {
+                        val savedItem = SavedIstilah(
+                            istilahArab = istilah.istilahArab,
+                            transkripsiArab = istilah.transkripsiArab,
+                            arti = istilah.arti,
+                            kategoriIstilah = istilah.kategoriIstilah,
+                            source = "Bagian1"
+                        )
+                        saveIstilahToPreferences(context, savedItem)
+                        isSaved.value = true
+                        Toast.makeText(context, "Istilah disimpan!", Toast.LENGTH_SHORT).show()
+                    }
                 },
             contentAlignment = Alignment.Center
         ) {
             Icon(
-                imageVector = Icons.Default.BookmarkBorder,
+                imageVector = if (isSaved.value) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
                 contentDescription = "Bookmark",
                 tint = Color.White,
                 modifier = Modifier.size(22.dp)

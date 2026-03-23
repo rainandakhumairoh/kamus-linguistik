@@ -1,18 +1,26 @@
 package com.arabic.kamuslinguistik.Page
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -21,6 +29,8 @@ import androidx.navigation.NavHostController
 
 @Composable
 fun Disimpan(navController: NavHostController) {
+    val context = LocalContext.current
+    val savedIstilahList = remember { mutableStateOf(getSavedIstilah(context)) }
 
     Column(
         modifier = Modifier
@@ -28,7 +38,7 @@ fun Disimpan(navController: NavHostController) {
             .background(Color(0xFFEDEDED))
     ) {
 
-        // TOPBAR
+        // ✅ TOPBAR
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -64,32 +74,151 @@ fun Disimpan(navController: NavHostController) {
             }
         }
 
-        // CONTENT
+        // ✅ CONTENT
+        if (savedIstilahList.value.isEmpty()) {
+            // ✅ EMPTY STATE
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(24.dp),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Belum Ada Istilah yang Disimpan",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF206C7A),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+
+                Text(
+                    text = "Mulai menyimpan istilah yang Anda pelajari dengan mengklik tombol bookmark pada halaman detail istilah.",
+                    fontSize = 14.sp,
+                    color = Color.DarkGray,
+                    textAlign = TextAlign.Center,
+                    lineHeight = 20.sp
+                )
+            }
+        } else {
+            // ✅ DAFTAR ISTILAH YANG DISIMPAN
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp, vertical = 20.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                items(
+                    items = savedIstilahList.value,
+                    key = { it.id }
+                ) { istilah ->
+                    SavedIstilahItem(
+                        istilah = istilah,
+                        onDelete = {
+                            deleteIstilahFromPreferences(context, istilah.istilahArab)
+                            savedIstilahList.value = getSavedIstilah(context)
+                        }
+                    )
+                }
+
+                item {
+                    Spacer(modifier = Modifier.height(20.dp))
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun SavedIstilahItem(
+    istilah: SavedIstilah,
+    onDelete: () -> Unit
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.White, RoundedCornerShape(12.dp))
+            .padding(16.dp)
+    ) {
         Column(
             modifier = Modifier
-                .fillMaxSize()
-                .padding(24.dp)
-                .verticalScroll(rememberScrollState())
+                .fillMaxWidth()
         ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.Top
+            ) {
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(end = 8.dp)
+                ) {
+                    // ✅ ISTILAH ARAB
+                    Text(
+                        text = istilah.istilahArab,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color(0xFF206C7A),
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    )
 
-//            Text(
-//                text = "Aplikasi Kamus Linguistik Multibahasa ini dirancang untuk membantu pengguna memahami berbagai istilah linguistik secara lebih mudah dan komprehensif. Aplikasi ini menyediakan daftar istilah linguistik yang dilengkapi dengan penjelasan serta padanannya dalam beberapa bahasa, yaitu Arab, Indonesia, Inggris, dan Mandarin.",
-//                fontSize = 14.sp,
-//                textAlign = TextAlign.Justify,
-//                lineHeight = 22.sp,
-//                color = Color.DarkGray
-//
-//            )
-//
-//            Spacer(modifier = Modifier.height(16.dp))
-//
-//            Text(
-//                text = "Melalui aplikasi ini, pengguna dapat mempelajari konsep-konsep dasar hingga lanjutan dalam bidang linguistik dengan cara yang praktis dan terstruktur. Aplikasi ini juga diharapkan dapat menjadi sumber referensi yang bermanfaat bagi mahasiswa, peneliti, maupun masyarakat umum yang tertarik pada kajian bahasa.",
-//                fontSize = 14.sp,
-//                textAlign = TextAlign.Justify,
-//                lineHeight = 22.sp,
-//                color = Color.DarkGray
-//            )
+                    // ✅ TRANSKRIPSI
+                    Text(
+                        text = istilah.transkripsiArab,
+                        fontSize = 12.sp,
+                        color = Color(0xFF206C7A),
+                        modifier = Modifier.padding(bottom = 8.dp)
+                    )
+
+                    // ✅ ARTI
+                    Text(
+                        text = istilah.arti,
+                        fontSize = 13.sp,
+                        color = Color.DarkGray,
+                        lineHeight = 18.sp
+                    )
+                }
+
+                // ✅ DELETE BUTTON
+                IconButton(
+                    onClick = onDelete,
+                    modifier = Modifier
+                        .size(24.dp)
+                        .padding(0.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Close,
+                        contentDescription = "Delete",
+                        tint = Color(0xFF206C7A),
+                        modifier = Modifier.size(20.dp)
+                    )
+                }
+            }
+
+            // ✅ KATEGORI BADGE
+            if (istilah.kategoriIstilah.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(8.dp))
+                Box(
+                    modifier = Modifier
+                        .background(
+                            Color(0xFF206C7A).copy(alpha = 0.1f),
+                            RoundedCornerShape(50.dp)
+                        )
+                        .padding(horizontal = 10.dp, vertical = 4.dp)
+                ) {
+                    Text(
+                        text = istilah.kategoriIstilah,
+                        fontSize = 11.sp,
+                        color = Color(0xFF206C7A),
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+            }
+
+
         }
     }
 }
