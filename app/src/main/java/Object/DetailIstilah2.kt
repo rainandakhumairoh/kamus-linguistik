@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -120,20 +121,20 @@ fun HeaderDetail2(navController: NavController) {
 @Composable
 fun DetailContent2(istilah: DetailIstilah2) {
     Column(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         // ✅ MAIN CARD
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White, RoundedCornerShape(20.dp))
+                .background(Color.White, RoundedCornerShape(12.dp))
                 .padding(20.dp)
         ) {
             Column(
                 modifier = Modifier.fillMaxWidth()
             ) {
-                // ✅ ISTILAH ENGLISH + ARAB (TOP)
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -142,32 +143,27 @@ fun DetailContent2(istilah: DetailIstilah2) {
                     verticalAlignment = Alignment.Top
                 ) {
                     Column(
-                        modifier = Modifier.weight(1f)
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
                     ) {
+                        // ✅ ISTILAH ARAB (TITLE - BESAR DAN BOLD)
                         Text(
-                            text = istilah.istilahInggris,
-                            fontSize = 18.sp,
+                            text = istilah.istilahArab,
+                            fontSize = 20.sp,
                             fontWeight = FontWeight.Bold,
                             color = Color(android.graphics.Color.parseColor("#206c7a")),
-                            modifier = Modifier.padding(bottom = 4.dp)
+                            textAlign = TextAlign.Center,
+                            modifier = Modifier.padding(bottom = 8.dp)
                         )
 
+                        // ✅ TRANSKRIPSI ARAB (SUBTITLE)
                         Text(
-                            text = istilah.prononInggris,
-                            fontSize = 12.sp,
-                            color = Color(android.graphics.Color.parseColor("#92babc")),
-                            fontStyle = androidx.compose.ui.text.font.FontStyle.Italic
+                            text = istilah.transkripsiArab,
+                            fontSize = 14.sp,
+                            color = Color(android.graphics.Color.parseColor("#206c7a")),
+                            textAlign = TextAlign.Center
                         )
                     }
-
-                    Text(
-                        text = istilah.istilahArab,
-                        fontSize = 20.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Color(android.graphics.Color.parseColor("#206c7a")),
-                        textAlign = TextAlign.Right,
-                        modifier = Modifier.padding(start = 16.dp)
-                    )
                 }
 
                 Divider(
@@ -183,10 +179,10 @@ fun DetailContent2(istilah: DetailIstilah2) {
                         .padding(bottom = 16.dp)
                 ) {
                     Text(
-                        text = "Makna",
+                        text = "Arti",
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color(android.graphics.Color.parseColor("#92babc")),
+                        color = Color(android.graphics.Color.parseColor("#206c7a")),
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
 
@@ -204,35 +200,7 @@ fun DetailContent2(istilah: DetailIstilah2) {
                     modifier = Modifier.padding(vertical = 16.dp)
                 )
 
-                // ✅ ARAB DETAILS (Transkripsi)
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = 16.dp)
-                ) {
-                    Text(
-                        text = "Transkripsi Arab",
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Color(android.graphics.Color.parseColor("#92babc")),
-                        modifier = Modifier.padding(bottom = 8.dp)
-                    )
 
-                    Text(
-                        text = istilah.transkripsiArab,
-                        fontSize = 13.sp,
-                        color = Color(android.graphics.Color.parseColor("#206c7a")),
-                        lineHeight = 18.sp
-                    )
-                }
-
-                Divider(
-                    color = Color(android.graphics.Color.parseColor("#92babc")),
-                    thickness = 1.dp,
-                    modifier = Modifier.padding(vertical = 16.dp)
-                )
-
-                // ✅ MANDARIN SECTION
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -252,22 +220,22 @@ fun DetailContent2(istilah: DetailIstilah2) {
 
                         Text(
                             text = istilah.istilahMandarin,
-                            fontSize = 13.sp,
-                            fontWeight = FontWeight.Medium,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold,
                             color = Color(android.graphics.Color.parseColor("#206c7a")),
                             modifier = Modifier.padding(bottom = 4.dp)
                         )
 
                         Text(
                             text = istilah.transkripsiMandarin,
-                            fontSize = 11.sp,
-                            color = Color(android.graphics.Color.parseColor("#92babc"))
+                            fontSize = 12.sp,
+                            color = Color(android.graphics.Color.parseColor("#206c7a"))
                         )
 
                         Text(
                             text = istilah.prononMandarin,
-                            fontSize = 11.sp,
-                            color = Color(android.graphics.Color.parseColor("#92babc")),
+                            fontSize = 12.sp,
+                            color = Color(android.graphics.Color.parseColor("#206c7a")),
                             fontStyle = androidx.compose.ui.text.font.FontStyle.Italic
                         )
                     }
@@ -277,14 +245,14 @@ fun DetailContent2(istilah: DetailIstilah2) {
                         thickness = 1.dp,
                         modifier = Modifier
                             .width(1.dp)
-                            .height(80.dp)
+                            .height(120.dp)
                     )
 
                     Column(
                         modifier = Modifier.weight(1f)
                     ) {
                         Text(
-                            text = "Pronunciation",
+                            text = "Inggris",
                             fontSize = 12.sp,
                             fontWeight = FontWeight.Bold,
                             color = Color(android.graphics.Color.parseColor("#92babc")),
@@ -292,8 +260,16 @@ fun DetailContent2(istilah: DetailIstilah2) {
                         )
 
                         Text(
+                            text = istilah.istilahInggris,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = Color(android.graphics.Color.parseColor("#206c7a")),
+                            modifier = Modifier.padding(bottom = 4.dp)
+                        )
+
+                        Text(
                             text = "/IPA: ${istilah.prononInggris}/",
-                            fontSize = 11.sp,
+                            fontSize = 12.sp,
                             color = Color(android.graphics.Color.parseColor("#206c7a")),
                             fontStyle = androidx.compose.ui.text.font.FontStyle.Italic
                         )
@@ -317,7 +293,7 @@ fun DetailContent2(istilah: DetailIstilah2) {
                         text = "Kategori:",
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color(android.graphics.Color.parseColor("#92babc"))
+                        color = Color(android.graphics.Color.parseColor("#206c7a"))
                     )
 
                     Spacer(modifier = Modifier.width(8.dp))
@@ -356,13 +332,13 @@ fun ActionButtonsBagian2() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 20.dp),
-        horizontalArrangement = Arrangement.spacedBy(16.dp),
+        horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically
     ) {
         // ✅ COPY BUTTON
         Box(
             modifier = Modifier
-                .size(50.dp)
+                .size(45.dp)
                 .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
                 .clickable {
                     // TODO: Implement copy to clipboard
@@ -373,14 +349,16 @@ fun ActionButtonsBagian2() {
                 imageVector = Icons.Default.ContentCopy,
                 contentDescription = "Copy",
                 tint = Color.White,
-                modifier = Modifier.size(24.dp)
+                modifier = Modifier.size(22.dp)
             )
         }
+
+        Spacer(modifier = Modifier.width(24.dp))
 
         // ✅ BOOKMARK BUTTON
         Box(
             modifier = Modifier
-                .size(50.dp)
+                .size(45.dp)
                 .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
                 .clickable {
                     // TODO: Implement bookmark
@@ -391,7 +369,7 @@ fun ActionButtonsBagian2() {
                 imageVector = Icons.Default.BookmarkBorder,
                 contentDescription = "Bookmark",
                 tint = Color.White,
-                modifier = Modifier.size(24.dp)
+                modifier = Modifier.size(22.dp)
             )
         }
     }

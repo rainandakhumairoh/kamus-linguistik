@@ -115,7 +115,7 @@ fun DetailContent1(istilah: DetailIstilah1) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White, RoundedCornerShape(16.dp))
+                .background(Color.White, RoundedCornerShape(12.dp))
                 .padding(24.dp)
         ) {
             Column(
@@ -160,7 +160,7 @@ fun DetailContent1(istilah: DetailIstilah1) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White, RoundedCornerShape(16.dp))
+                .background(Color.White, RoundedCornerShape(12.dp))
                 .padding(24.dp)
         ) {
             Column(
@@ -205,30 +205,31 @@ fun DetailContent1(istilah: DetailIstilah1) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White, RoundedCornerShape(16.dp))
+                .background(Color.White, RoundedCornerShape(12.dp))
                 .padding(16.dp)
         ) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Kategori",
+                    text = "Kategori:",
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color(android.graphics.Color.parseColor("#206c7a"))
                 )
 
+                Spacer(modifier = Modifier.width(8.dp))
+
                 Box(
                     modifier = Modifier
                         .background(
                             Color(android.graphics.Color.parseColor("#206c7a")).copy(alpha = 0.1f),
-                            RoundedCornerShape(8.dp)
+                            RoundedCornerShape(50.dp)
                         )
-                        .padding(horizontal = 12.dp, vertical = 6.dp)
+                        .padding(horizontal = 12.dp, vertical = 4.dp)
                 ) {
                     Text(
                         text = istilah.kategoriIstilah,
@@ -261,7 +262,7 @@ fun ActionButtonsBagian1() {
         // ✅ COPY BUTTON
         Box(
             modifier = Modifier
-                .size(56.dp)
+                .size(45.dp)
                 .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
                 .clickable {
                     // TODO: Implement copy to clipboard
@@ -272,7 +273,7 @@ fun ActionButtonsBagian1() {
                 imageVector = Icons.Default.ContentCopy,
                 contentDescription = "Copy",
                 tint = Color.White,
-                modifier = Modifier.size(26.dp)
+                modifier = Modifier.size(22.dp)
             )
         }
 
@@ -281,7 +282,7 @@ fun ActionButtonsBagian1() {
         // ✅ BOOKMARK BUTTON
         Box(
             modifier = Modifier
-                .size(56.dp)
+                .size(45.dp)
                 .background(Color(android.graphics.Color.parseColor("#206c7a")), CircleShape)
                 .clickable {
                     // TODO: Implement bookmark
@@ -292,7 +293,7 @@ fun ActionButtonsBagian1() {
                 imageVector = Icons.Default.BookmarkBorder,
                 contentDescription = "Bookmark",
                 tint = Color.White,
-                modifier = Modifier.size(26.dp)
+                modifier = Modifier.size(22.dp)
             )
         }
     }
