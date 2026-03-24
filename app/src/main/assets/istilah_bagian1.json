@@ -29,7 +29,7 @@
   },
   {
     "transkripsiArab": "ʔal-ʔasāsu ʔaw morfīm",
-    "arti": "",
+    "arti": "Pangkal",
     "penjelasan": "الْأَسَاسُ هُو مورفيم يُمكن توسيعه باض افة الألقاب\n\nʔal-ʔasāsu huwa mürfirmu yumkinu tausiluhu biʔidafati I-ʔalqabi\n\nPangkal adalah morfem yang dapat diperluas dengan dibubuhi afiks",
     "istilahArab": "الأساس أو مورفيم",
     "kategoriIstilah": "Morfologi"
@@ -56,8 +56,8 @@
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "ʔaṣwātu dzalqiyatu liθawiyyati",
-    "arti": "ʔasnāniyyah",
+    "transkripsiArab": "ʔaṣwātu dzalqiyatu\nliθawiyyati ʔasnāniyyah",
+    "arti": "Bunyi apiko-dental",
     "penjelasan": "الصَّوْتُ الَّذِي تُصَدِّرُه اصطدام طرف اللسان بِالْأَسْنَانِ الْعُلْوِيَّة\n\nʔassaut'lladzī taşdiruhu 'ştidāmi tarfi lisani bi ʔasnāni Kuluwiyyati \nBunyi yang dihasilkan dari ujung lidah yang mengenai gigi atas",
     "istilahArab": "أصوات ذلقية لثوية أسنانية",
     "kategoriIstilah": "Fonetik/Fonologi"
@@ -84,15 +84,15 @@
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "ʔaṣwatu",
-    "arti": "ṭarfiyyatu",
+    "transkripsiArab": "ʔaṣwatu ṭarfiyyatu \nġāriyyah",
+    "arti": "Bunyi Palatal",
     "penjelasan": "الصوت الذي تصدره ارتطام مؤخرة اللسان بسقف الفم .\n\nʔaş-şautu ladzi taşdiruhu ʔirtațăma muraxxiratu 'lisōni bisaafi 'Ifammi \nBunyi yang dihasilkan dari punggung lidah yang mengenai langit-langit mulut",
     "istilahArab": "أصوات طرفية غارية",
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "ʔaṣwatu",
-    "arti": "qaṣiyyatu ṭabqiyyatu",
+    "transkripsiArab": "ʔaṣwatu qaṣiyyatu ṭabqiyyatu",
+    "arti": "Bunyi dorso-velar",
     "penjelasan": "الصوت الناتج عن اصطدام قَاعِدَةُ اللسان با لحنك الرخو\n\nʔas-sautu 'Inatiji San Pistidāmi galidat 'Ilisani bi 'lhanki 'rroxwi\n\nBunyi yang dihasilkan dari pangkal lidah yang mengenai langit-langit lunak",
     "istilahArab": "أصوات قصية طبقية",
     "kategoriIstilah": "Fonetik/Fonologi"
@@ -105,14 +105,14 @@
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "ʔalʔafعālu ʔalkalāmiyyatu ʔalmubāširatu",
+    "transkripsiArab": "ʔalʔafعālu ʔalkalāmiyyatu \nʔalmubāširatu",
     "arti": "Tindak tutur langsung",
     "penjelasan": "هي عبارة عن الأقوال تدلّ صيغتها على ما تدلّ عليه هذه الأقوال، أي الصّيغة تساوي المحتوى.\n\nYaitu tuturan-tuturan yang bentuk atau ungkapannya menunjukkan secara langsung apa yang dimaksud oleh tuturan tersebut; artinya, bentuk (struktur) tuturan tersebut sama dengan isinya.",
     "istilahArab": "الأفعال الكلاميّة المباشرة",
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "ʔalʔafعālu ʔalkalāmiyyatu ġayru ʔalmubāširatu",
+    "transkripsiArab": "ʔalʔafعālu ʔalkalāmiyyatu \nġayru ʔalmubāširatu",
     "arti": "Tindak tutur tidak langsung",
     "penjelasan": "هي عبارة عن تلك الأقوال التي لا تدلّ صيغتها على ما تدلّ عليه.\n\nYaitu tuturan-tuturan yang bentuk atau ungkapannya tidak menunjukkan secara langsung apa yang dimaksud oleh tuturan tersebut.",
     "istilahArab": "الأفعال الكلاميّة غير المباشرة",
@@ -128,7 +128,7 @@
   {
     "transkripsiArab": "al-amr",
     "arti": "Imperatif",
-    "penjelasan": "الْأمْرُ هُوَ يَتِمَ اسْتِخْدَامُ الْأَمْر لإعطاء الأمرأ و طلبات\n\nPal-amir huwa yatamu Pistikhdam Pal-amir li?'ata'il amir Paw talabatan.\n\nImperatif adalah dipakai untuk memberikan perintah atau permintaan.",
+    "penjelasan": "الْأمْرُ هُوَ يَتِمَ اسْتِخْدَامُ الْأَمْر لإعطاء الأمرأ و طلبات\n\nal-amir huwa yatamu istikhdam Pal-amir li?'ata'il amir Paw talabatan.\n\nImperatif adalah dipakai untuk memberikan perintah atau permintaan.",
     "istilahArab": "الأمر",
     "kategoriIstilah": "Sintaksis"
   },
@@ -168,14 +168,14 @@
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "ʔalʔiḥālatu ʔaddāxiliyyatu ʔalbaعdiyyatu",
+    "transkripsiArab": "ʔalʔiḥālatu, ʔaddāxiliyyatu, \nʔalbaعdiyyatu",
     "arti": "Anafora",
     "penjelasan": "اللفظ الذي يكون الإحالة، ويقع بعد اللفظ ما يطلبنا إحالتها.\n\nKata yang berfungsi sebagai rujukan, dan muncul setelah kata yang meminta rujukan kepadanya.",
-    "istilahArab": "الإحالة الداخلية البعدية",
+    "istilahArab": "الإحالة, الداخلية,\nالبعدية",
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "ʔalʔiḥālatu ʔaddāxiliyyatu ʔalqabliyyatu",
+    "transkripsiArab": "ʔalʔiḥālatu ʔaddāxiliyyatu \nʔalqabliyyatu",
     "arti": "Katafora",
     "penjelasan": "اللفظ الذي يكون الإحالة، ويقع قبل اللفظ ما يطلبنا إحالتها.\n\nKata yang berfungsi sebagai rujukan, dan muncul sebelum kata yang meminta rujukan kepadanya.",
     "istilahArab": "الإحالة الداخلية القبلية",
@@ -287,17 +287,10 @@
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "Isyaaratun!",
-    "arti": "Haaliyatun! Haalatun!",
-    "penjelasan": "مُصْطَلَحٌ يُسْتَخْدَمُ فِي الْوَصْفِ النَّحْوِي لِلْجُمْلَةِ للدلالَةِ عَلَى إِشَارَة نَحُويَة بواسطة الضمير أو ، أو في النص كرة في الكلام ، أو في ال غيره ، إلى اسم سبق ذكره في ، أو في المحادثة للابْتِعَادِ عَنِ النَّكْرَارِ ، وَمِنْ أمثلة ذلك الصَّمِيرُ ( هُمْ ) العَائِدُ عَلَى ( قَوْمِ ) في قَوْلِ الشَّاعِر :\n\nSebuah istilah yang digunakan dalam deskripsi gramatikal kalimat; Untuk menunjukkan referensi tata bahasa melalui kata ganti atau sebaliknya, ke kata benda yang sebelumnya disebutkan dalam ucapan, teks, atau percakapan. Untuk menghindari pengulangan, dan contohnya adalah kata ganti (mereka) yang merujuk pada (orang) dalam ucapan penyair:",
-    "istilahArab": "إِشَارَةُ الحالية ، إحالة ، عَائِدِيَّةٌ",
-    "kategoriIstilah": "Pragmatik"
-  },
-  {
-    "transkripsiArab": "Imkānun Wushüli, Suhülatul Manali",
+    "transkripsiArab": "Imkānun Wushüli, Suhülatul Matsali",
     "arti": "Aksesibilitas",
     "penjelasan": "مصطلح مَأْخُود مِنْ عِلْمِ النَّفْسِ، وَيُسْتَخْدَمُ فِي عِلْمِ اللغَةِ النَّفْسِي ؛ لِلْإِشَارَةِ إلى مدى السهولة التي يُمْكِنُ خِلَالَهَا للمتكلم اسْتِرْجَاعُ صِيغَةُ لُغَوِيَّةً مِنَ الذاكرة.\n\nIstilah ini diambil dari psikologi dan digunakan dalam linguistik psikologi untuk merujuk pada seberapa mudah pembicara dapat mengambil kembali bentuk bahasa dari memori.",
-    "istilahArab": "إِمْكَانُ الْوُصُولِ، سُهولة الْمَثَالِ",
+    "istilahArab": "إِمْكَانُ الْوُصُولِ،\nسُهولة الْمَثَالِ",
     "kategoriIstilah": "Psikolinguistik"
   },
   {
@@ -309,7 +302,7 @@
   },
   {
     "transkripsiArab": "ʔal-ʔiḥtikākiyyah",
-    "arti": "",
+    "arti": "Frikatif",
     "penjelasan": "مصطلح يستخدم في علم الأصوات السمعي : للإشارة إلى اتِّصَالِ يُثْمِ غَيْرِ الْمَوْجَاتِ الصوتية، عن طريق الكلام، أو فرع العليل، أو الصغير، أو غير ذَلِكَ مَنِ الْأَصْوَاتِ الَّتِي يُمْكِنُ إدراكها عن طريق السمع\n\nIstilah yang digunakan dalam fonologi; Untuk menunjukkan komunikasi melalui gelombang suara. Baik besar maupun kecil, atau suara lain yang bisa disimak oleh pendengaran.",
     "istilahArab": "الاحتكاكية",
     "kategoriIstilah": "Fonetik/Fonologi"
@@ -371,10 +364,10 @@
     "kategoriIstilah": "Morfologi"
   },
   {
-    "transkripsiArab": "Idhthiraabil",
-    "arti": "Kitaabati",
+    "transkripsiArab": "Idhthiraabil Kitaabati\najzakitaabii",
+    "arti": "Agraphia/gangguan kemampuan menulis didapat akibat kerusakan otak",
     "penjelasan": "تَدُلُّ كَلِمة agraphia في أصل وضعها اللغوي على فقدان القدرة على الكتابة بسبب اعتلال لغوي ، نتيجة خلل في الدماغ\n\nKata agraphia, dalam posisi linguistik aslinya, menunjukkan hilangnya kemampuan menulis karena gangguan bahasa, akibat kerusakan otak",
-    "istilahArab": "اضطراب الكتابة عجز كتابي",
+    "istilahArab": "اضطراب الكتابة\nعجز كتابي",
     "kategoriIstilah": "Neurolinguistik"
   },
   {
@@ -547,8 +540,8 @@
   },
   {
     "transkripsiArab": "tatbiqi",
-    "arti": "",
-    "penjelasan": "فرع اللسانيات الذي يناقش تطبيق الاكتشافات العلمية المختلفة في مجال اللغويات\n\nfarsu 'Ilisaniyyāt 'lladzī yunāqiš tatbiqi 'Piktišāfāti Kulumiyyati 'Imuxtalifati fi majāli 'lluġaqiyyāt\n\nCabang linguistik yang membahas mengenai penerapan berbagai penemuan ilmiah di bidang linguistik",
+    "arti": "Terapan",
+    "penjelasan": "فرع اللسانيات الذي يناقش تطبيق الاكتشافات العلمية المختلفة في مجال اللغويات\n\nfarsu 'Ilisaniyyāt 'lladzī yunāqiš tatbiqi 'iktišāfāti Kulumiyyati 'Imuxtalifati fi majāli 'lluġaqiyyāt\n\nCabang linguistik yang membahas mengenai penerapan berbagai penemuan ilmiah di bidang linguistik",
     "istilahArab": "تطبقي",
     "kategoriIstilah": "Linguistik Terapan"
   },
@@ -637,157 +630,157 @@
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "Ats-tsunaiyyatul lughawiyyatul intäjiyyatu",
+    "transkripsiArab": "Ats-tsunaiyyatul lughawiyyatul\nintäjiyyatu",
     "arti": "Bilingualisme produktif",
     "penjelasan": "في حَالَةِ الشَّخْصِ ثُنَائِيَّ اللُّغَةِ قَدْ تَكُونُ ثُنَائِيَّتُهُ مِنْ النَّوْعِ الإِنْتَاجِي، وَمِثْلُ هَذَا الْفَرْدِ قَادِرٌ عَلَى إنتاج اللغَةِ الْأُولَى وَاللُّغَةِ الثَّانِيَةِ كَلَامًا أَوْ كِتَابَةً، أَوْ كَلَامًا وَكِتَابَةً.\n\nDalam kasus orang bilingualisme mungkin merupakan tipe produktif, dan orang tersebut mampu menghasilkan bahasa pertama dan bahasa kedua dengan berbicara atau menulis, atau dengan berbicara dan menulis.",
-    "istilahArab": "الثنائية اللُّغَوِيَّة الْإِنْتاجِيَّةُ",
+    "istilahArab": "الثنائية اللُّغَوِيَّة\nالْإِنْتاجِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Madrosiyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nMadrosiyyati",
     "arti": "Bilingualisme Sekolah",
     "penjelasan": "وَتَعْنِي أَنَّ التَعْلِيمِ فِي المَدْرَسَةِ بِلُغَتَيْنِ؛ لِذَلِكَ تُسَمَّى ثُنَائِيَّةٌ تَعْلِيمِيَّةً أَيْضًا \n\nArtinya pendidikan di sekolah itu dalam dua bahasa. Itu sebabnya disebut juga pendidikan ganda.",
     "istilahArab": "الثنائية اللُّغَوِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatir",
-    "arti": "Roasiyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatir \nRoasiyyati",
+    "arti": "Bilingualisme Vertikal",
     "penjelasan": "إِذَا كَانَتْ اللُّغَتَانِ لَهُجَتَيْنِ لِلْغَةٌ وَاحِدَةٌ كَأَنْ تَكُوْنُ لَهْجَةٌ عَالِيَةٌ فَصِيْحَةٌ وَلَهْجَةٌ عَامِيَةٌ مَحْلِيَةٌ، فَتَدْعِيْ هَذِهِ الثُنَائِيَةِ ثُنَائِيَةِ لُغَوِيَةِ رَأْسِيَةِ وَجَاءَ مَفْهُوْمُ الرَّأْسِيَّةُ مِنْ وُجُوْدِ لَهْجَةٌ عَالِيَةٌ هِيَ اللَّهُجَةُ الفَصِيْحَةُ وَأَخْرَى أَقُلُ شَأْنَا أَوْ عُلُوا هِيَ اللَّهُجَةُ العَامِيَةُ أَو المَحْلِيَةُ وَتَدْعِي هَذِهِ الحَالَةَ أَيْضًا الثَّنَائِيَةُ اللَّهْجِيَةُ\n\nJika kedua bahasa tersebut adalah dialek dari bahasa yang sama, seperti dialek fasih tinggi dan dialek sehari-hari lokal, ini disebut bilingualisme vertikal. Konsep vertikal berasal dari adanya dialek tinggi, yaitu dialek fasih. Dan satu lagi, yang kurang penting atau lebih unggul, adalah dialek sehari-hari atau lokal, dan kasus ini juga disebut bi-dialek.",
-    "istilahArab": "الثُنَائِيَةُ\nاللُّغَوِيَّةِ الرَّأْسِيَّةِ",
+    "istilahArab": "الثُنَائِيَةاللُّغَوِيَّةُِ\nالرَّأْسِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Farodhiyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nFarodhiyyati",
     "arti": "Billingualisme Individu",
     "penjelasan": "مُصْطَلَحُ يَدُلُّ عَلَى نِسْبَةِ الثَّنَائِيَةِ اللُّغَوِيَّةِ إِلَى الفرد\nIstilah yang menunjukkan rasio bilingualisme untuk individu",
-    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ الفَرَدِيَّةُ",
+    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ\nالفَرَدِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
     "transkripsiArab": "Bidialectalism",
     "arti": "Bidialektalisme",
     "penjelasan": "وَهِيَ اللَّتِي تُسَمَّى عِنْدَ بَعْضَ البَاحِثَيْن بَازْدِوَاجِيَةٌ مِنَ لُغَةٍ وَاحِدَةٍ وَ بَصُورَةِ تَكَامِلِيَّةٍ. فَفِي حَالَةٍ المَثْفِقَيْنِ العَرَبُ نَرَاهُمْ يَسْتَخْدِمُونَ العَرَبِيَّةُ الفَصِيْحَةُ فِي التَّعْلِيمِ وَ المُحَاضِرَاتِ وَالخَطِبِ الرَّسْمِيَةِ وَالكِتَتَبَةِ وَنَشَرَاتِ الأَخْبَارِ، وَيَسْتَخْدِمُوْنَ العَامِيَةُ فِي البَيْتِ وَالشَّارِع و الإِسْتِخْدَامُ التَّكَامِلِي هَذَا وَاضِحٌ فَاللَّهُجَة الفَصِيْحَةُ لِلاسْتِخْدَامِ الرَّسْمِيَّ, وَاللَّهْجَةُ العَمِيَةُ للاسْتِخْدَامِ غَيْرَ الرَّسْمِيَّ, وَلَا نَقْصُدُ بِاالرَّسْمِي هُنَا الحُكُوْمِي، بَلْ يَدَلُّ مُصْطَلَحُ عَلَى الاسْتِخْدَامِ الرَّفِعِ اللُّغَةِ وَ مُصْطَلَحُ غَيْرَ الرَّسْمِي يَدُلُّ عَلَى الاسْتِخْدَامِ الشَّحْصِي أَوْ الشَّعْبِي أَوْ الوَدِّ لِلُّغَةِ\n\nInilah yang oleh sebagian peneliti disebut sebagai dualitas satu bahasa dan secara terpadu. Dalam kasus orang terpelajar Arab, kita melihat mereka fasih berbahasa Arab dalam pengajaran, ceramah, pidato resmi, dan tulisan, Mereka menggunakan bahasa gaul di rumah dan di jalan. Dan penggunaan pelengkap ini jelas; Dialek formal adalah untuk penggunaan formal, Dan dialek umum adalah untuk penggunaan informal, dan yang kami maksud dengan pejabat di sini bukan pemerintahan, melainkan istilah tersebut menunjukkan penggunaan status tinggi, Istilah informal menunjukkan penggunaan bahasa yang pribadi, populer, atau ramah.",
-    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ اللَّهْجِيَّةِ",
+    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ\nاللَّهْجِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Mujtama'iyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nMujtama'iyyati",
     "arti": "Billingualisme Masyarakat",
     "penjelasan": "مُصْطَلَحُ يَدُلُّ عَلَى نِسْبَةِ الثَّنَائِيَةِ اللُّغَوِيَّةِ إِلَى المُجْتَمَعِ أَو الجَمَاعَةِ\nSebuah istilah yang menunjukkan atribusi bilingualisme  ke komunitas atau masyarakat",
-    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ المُجْتَمَعِيُّ",
+    "istilahArab": "الثُنَائِيَةُ اللُّغَوِيَّةِ\nالمُجْتَمَعِيُّ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Matsaaliyy",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nMatsaaliyy",
     "arti": "Bilingualisme Ideal",
     "penjelasan": "مُصْطَلَحُ يَطْلُقُ عَلَى الشَّحْصِ الَّذِي يَتَّقِنُ اللَّغَةُ الأولى وَاللُّغَةُ الثَّانِيَةُ إِثْقَانًا تَامًا\n\nIstilah yang diterapkan pada orang yang menguasai bahasa pertama dan bahasa kedua sepenuhnya.",
-    "istilahArab": "الثَّنَائِيَةُ\nاللُّغَوِيَّةِ المثالي",
+    "istilahArab": "الثَّنَائِيَة اللُّغَوِيَّةِ\nالمثالي",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Ishthinaa'iyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nIshthinaa'iyyati",
     "arti": "Bilingualisme Ideal",
     "penjelasan": "إِذَا تُقَدِّمُ الفَرْدُ فِي تَعَلُّمِ اللُّغَةِ الأُولَى وَاللُّغَةِ الثَّانِيَةِ إِلَى دَرَجَةِ عَلِيَةٍ مِنَ الإِثْقَانِ المُتَسَاوِى دُونَ الوُصْلِ إِلَى مَرْحَلَةِ الثُنَائِيَةُ المِثَالِيَةِ, فَإِنَّهُ مِثَالُ عَلَى الثُنَائِيَةِ اللُّغَوِيَةِ المُتَوَازِنَةِ أَوْ المُتَسَاوِيَةِ أَوْ المُتَمَائِلَةِ أَيُّ إِتْقَانُ اللُّغَتَينِ بِمُسْتَوَى وَاحِدٍ لِأَهْدَافِ مُتَنَاظِرَةٍ\n\nJika individu disajikan dalam mempelajari bahasa utama dan bahasa kedua penguasaan yang setara tanpa mencapai tahap yang setara sampai mencapai tahap yang sempurna. Ini adalah contoh bilingualisme yang seimbang, setara, atau serupa, yaitu menguasai dua bahasa pada tingkat yang sama sebagai anugerah.",
-    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ الإِصْطِنَا عِيَّةِ",
+    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ\nالإِصْطِنَا عِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Takaamiliyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nTakaamiliyyati",
     "arti": "Bilingualisme yang saling melengkapi",
     "penjelasan": "يَجْعَلُ بَعْضُ ثَنَانِي اللَّغَةِ لِكُلَّ لُغَةِ وَظِيفَة؛ فَمِثْلاً قَدْ يَخْصُصِ اللَّغَةَ الأُولَى لِلْبَيْتِ، وَاللُّغَةُ الثَّانِيَةُ لِمَا سَوَاهُ, وَقَدْ يَخْصُصِ اللَّغَةُ الثَّانِيَةُ لِلْكِتَابَةِ وَ اللُّغَةَ الْأُولَى لِمَا عَدَاهَا وَقَدْ يَخْصُصِ اللَّغَةُ الثَّانِيَةُ لِعَلَّمٍ مِنَ العُلُوْمِ وَ اللَّغَةَ الأَوْلَى لِمَا سَوَاهُ. وَ فِي هَذِهِ الحَالَاتِ تُدْعِي الثُنَائِيَةُ ثُنَائِيَةُ تَكَامِلِيَةِ أَوْ وَظيفِيَة؛ أَيُّ إِنَّ اللَّغَتَيْنِ الْأَوْلَى وَ الثَّانِيَةُ تَتَكَامِلانِ في الأَدْوَارَ : اللُّغَةُ الأُولَى لَهَا وَظَائِفُهَا الخَاصَةُ بِهَا فِي حَيَاةِ ذَلِكَ الفَرْدُ، وَ اللَّغَةُ الثَّانِيَةُ لَهَا وَظَائِفُهَا الخَاصَةُ بِهَا.\n\nBeberapa bilingualisme membuat setiap bahasa berfungsi; Misalnya, dia dapat menentukan bahasa pertama untuk rumah, dan bahasa kedua untuk hal lain, dan dia dapat menentukan bahasa kedua untuk menulis dan bahasa pertama untuk keluarga, Dia mungkin menentukan bahasa kedua untuk salah satu ilmu dan bahasa pertama untuk sesuatu yang lain. Dalam kasus ini dualitas disebut komplementer atau dualitas fungsional; Artinya, bahasa pertama dan kedua saling melengkapi dalam peran: Bahasa pertama memiliki fungsinya sendiri-sendiri dalam kehidupan individu tersebut, dan bahasa kedua memiliki fungsinya sendiri-sendiri.",
-    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ التَّكَامِلية",
+    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ\nالتَّكَامِلية",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul lughowiyatil Quthriyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nQuthriyati",
     "arti": "Bilingualisme Diagonal",
     "penjelasan": "وَهِيَ ثُنَائِيَةُ تَجْمَعُ بَيْنَ لُغَةٌ فَصِيْحَةٌ وَلَهْجَةٌ غَيْرَ فَصِيْحَةٌ مِنْ لُغَةِ أُخْرَى مِثَالٌ ذَلِكَ سَكَانٌ لُوْزِيَانَا فِي الوَلايَاتِ المُتَّحِدَةُ الأَمْرِيكِيَّةُ مَعَ الفَرَنْسِيَّةُ الْمَحْلِيَةُ واللُّغَةُ الإِنْجِلِيزِيَّةُ\n\nIni adalah dualitas yang menggabungkan bahasa yang fasih dengan dialek yang tidak lancar dari bahasa lain. Contohnya adalah populasi Louisiana di Amerika Serikat dengan bahasa Prancis dan Inggris setempat",
-    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ القُطْرِيَّةِ",
+    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ\nالقُطْرِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Tsunaiyatul",
-    "arti": "lughowiyatil Ufuqiyyati",
+    "transkripsiArab": "Tsunaiyatul lughowiyatil\nUfuqiyyati",
+    "arti": "Bilingualisme horizontal",
     "penjelasan": "إِذَا كَانَ مُجْتَمَعُ مَا يَسْتَعْمِلُ أَفْرَادَهُ لَغَتَيْنِ مُتَسَاوِيَتَيْنِ فِي المَكَانَةِ عَلَى الْمُسْتَوَى الرَسْمِي وَالثَّقَافِي وَالأَسْرِي فَتَدْعَى هَذِهِ الثَّنَائِيَةُ ثُنَائِيَةِ لُغَوِيَةِ أَفْقِيَّةِ, وَجَاءَ مَفْهُوْمُ الْأَفْقِيَّةِ مِنْ مَفْهُوْمٍ التَكَافَؤُ وَالتَنَاظِرُ فِي المَكَانَةِ اللُّغَوِيَّةِ\n\nJika suatu komunitas menggunakan dua bahasa dengan status yang sama di tingkat resmi, budaya, dan keluarga. Dualisme ini disebut bilingualisme horizontal, dan konsep horizontalitas berasal dari konsep kesepadanan dan simetri dalam bahasa.",
-    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّةِ الْأُفُقِيَّةِ",
+    "istilahArab": "الثَّنَائِيَةُ اللُّغَوِيَّة\nالْأُفُقِيَّةِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatul",
-    "arti": "¡'lāmiyyatu",
+    "transkripsiArab": "Tsunaiyyatul lughawiyyatul\ni'lāmiyyatu",
+    "arti": "Bilingualisme (kemampuan berbicara dua bahasa dengan baik) informasi/bilingualisme media massa",
     "penjelasan": "وَالْمَقْصُودُ بِهَا وُجُودُ صُحُفِ وَبَرَامِجَ إِذَاعِيَّةٍ وترامج تليفزيونِيَّةِ بِاللَّغَتَيْنِ وَقَدْ تَكُونُ الصَّحِيفَةُ الْوَاحِدَةُ بِلُغَتَيْنِ أَوْ لَهَا طَبْعَةٌ خَاصَّةٌ بِكُلِّ لُغَةٍ، أَوْ تَكُونُ هُنَاكَ صُحُفٌ بِاللُّغَةِ الْأُولَى وَصُحُفٌ بِاللُّغَةِ الثَّانِيَةِ. وَكَذَلِكَ الْبَرَامِجُ الْإِذَاعِيَّةُ وَالتَّلِيفِريُونِيَّةُ ؛ فَقَدْ تَكُونُ هُنَاكَ مَحَطَّةٌ خَاصَّةٌ لكُلِّ لُغَةٍ، أَوْ مَوْجَةٌ خَاصَّةٌ لِكُلِّ لُغَةٍ، أَوْ قَنَالٌ خَاصٌ لِكُلِّ لُغَةٍ ، أَوْ تَكُونُ هُنَاكَ مَوْجَةٌ وَاحِدَةٌ أَوْ فَنَالٌ وَاحِدٌ مَعَ الْبَثَّ فِي لُغَتَيْنِ حَسْبَ بَرْنَامَجِ زَمَنِي مَحْسُوبٍ.\n\nYang dimaksud adalah adanya surat kabar, program radio, dan program televisi dalam kedua bahasa tersebut. Satu surat kabar mungkin dalam dua bahasa atau memiliki edisi khusus untuk setiap bahasa, atau mungkin ada surat kabar dalam bahasa pertama dan surat kabar dalam bahasa kedua. Begitu pula pada program radio dan televisi; Mungkin ada stasiun khusus untuk setiap bahasa, atau gelombang khusus untuk setiap bahasa, atau saluran khusus untuk setiap bahasa, atau mungkin ada satu gelombang atau satu saluran dengan siaran dalam dua bahasa sesuai jadwal yang dihitung.",
-    "istilahArab": "الثَّنَائِيَّةُ\nاللُّغَوِيَّةُ\nالْإِعْلَامِيَّةُ",
+    "istilahArab": "الثَّنَائِيَّة اللُّغَوِيَّةُ\nالْإِعْلَامِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatul",
-    "arti": "'amaliyyatu",
+    "transkripsiArab": "Tsunaiyyatul lughawiyyatul\n'amaliyyatu",
+    "arti": "Bilingualisme bisnis",
     "penjelasan": "وَتَكُونُ الثَّنَائِيَّةُ فِي الْعَمَلِ، وَفِي كَثِيرٍ مِنْ بُلْدَانِ الْعَالَمِ الثَّالِثِ تُوجَدُ مِثْلُ هَذِهِ الثَّنَائِيَّةِ؛ فَقَدْ لَا تُسْمَعُ إِلَّا لُغَتَيْنِ فِي مَكَانِ الْعَمَلِ فِي الشَّرِكَةِ مَثَلًاً - أَوِ الْمُسْتَشْفَى نَظَرًا لِوُجُود خَلِيطٍ مِنْ جِنْسِيَّاتٍ مُخْتَلِفَةٍ. بَلْ إِنَّ بَعْضَ مَرَاكِزِ الْعَمَلِ تَسْمَعُ فِيهَا أَكْثَرَ مِنْ لُغَتَيْنِ: ثَلَاثًا أَوْ أَرْبَعًا مَثَلًا، حَسْبَ عَدَدَ الْجِنْسِيَّاتِ الْأُخْرَى وَتَنَوُّعَهَا، وَفِي الْعَادَةِ يَخْتَارُ الْعَامِلُونَ لُغَةً مَرْمُوقَةً فَيَجْعَلُونَهَا اللُّغَةَ الْمُشْتَرَكَةَ بَيْنَهُمْ؛ لِأَنَّهُمْ جَمِيعًا يَعْرِفُونَهَا مِنْ نَاحِيَةِ، وَلأَنَّهَا لُغَةُ الْعَمَلِ أَوِ التَّقْنِيَّةُ مِنْ نَاحِيَةٍ أُخْرَى، أَوْ لِأَنَّ النَّافِذِينَ فِي الْعَمَلِ يُتَّقِنُونَ هَذِهِ اللُّغَةَ، أَوْ لِأَنَّ ارْتِبَاطَ الشَّرِكَةِ أَوِ الْعَمَلَ قَائِمٌ بِدَرَجَةٍ رَئِيسِيَّةٍ مَعَ بَلَدٍ خَارِجِيَّ يَتَكَلَّمُ هَذِهِ اللُّغَةَ.\n\nDualisme (bahasa) dalam pekerjaan, dan di banyak negara dunia ketiga ada dualitas semacam itu; Anda mungkin hanya mendengar dua bahasa di tempat kerja: di perusahaan misalnya atau di rumah sakit karena adanya campuran dari berbagai negara. Memang, di beberapa pusat kerja Anda mendengar lebih dari dua bahasa: tiga atau empat, misalnya, tergantung pada jumlah dan keragaman kebangsaan lain, dan biasanya para pekerja memilih bahasa yang bergengsi dan menjadikannya bahasa umum di antara mereka; Karena mereka semua mengetahuinya di satu sisi, dan karena itu adalah bahasa kerja atau teknologi di sisi lain, atau karena orang-orang berpengaruh di tempat kerja fasih dalam bahasa ini, atau karena perusahaan atau pekerjaan tersebut terutama terkait dengan bahasa asing negara yang menggunakan bahasa ini.",
-    "istilahArab": "الثَّنَائِيَّةُ\nاللُّغَوِيَّةُ\nالْعَمَلِيَّةُ",
+    "istilahArab": "الثَّنَائِيَّة اللُّغَوِيَّةُ\nالْعَمَلِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatu lirradhi'i",
+    "transkripsiArab": "Tsunaiyyatul lughawiyyatu\nlirradhi'i",
     "arti": "'Bilingualisme bayi'",
     "penjelasan": "قَدْ يَتَعَرَّضُ الطَّفْلُ الرَّضِيعُ لِلْغَتَيْنِ مَعَا مُنْذُ نَشْأَتِهِ، وَيَحْدُثُ هَذَا حِينَ يَكُونُ كُلِّ مِنْ الْوَالِدَيْنِ ثُنَائِيَّ اللُّغَةِ؛ فَإِذَا حَدَثَ هَذَا، يَكْتَسِبُ الرضيع لغتين في وَقْتِ وَاحِدٍ، وَتُصْبِحُ اللَّغَةُ الْأُولَى وَاللُّغَةُ الثَّانِيَةُ مُتَسَاوِيَتَيْنِ لَدَيْهِ، لَا فَرْقَ بَيْنَهُمَا مِنْ حَيْثُ تَرْتِيبُ الاكْتِسَابِ؛ بَلْ إِنَّ لَفْظَ اللُّغَةِ الْأُولَى وَلَفْظَ اللُّغَةِ الثَّانِيَةِ يُصْبِحُ لَا مَعْنَى لَدَيْهِ هُنَا، وَيَكُونُ الطِّفْلُ هُنَا مِثْلَ مَنْ لَدَيْهِ لُغَتَانِ أَولَيَانِ.\n\nSeorang bayi mungkin mengenal dua bahasa sejak awal, dan ini terjadi ketika kedua orang tuanya bilingual; Ketika ini terjadi, bayi memperoleh dua bahasa pada saat yang sama, bahasa pertama dan bahasa kedua menjadi setara dengannya, tanpa ada perbedaan di antara keduanya dalam hal urutan perolehannya. Sebaliknya, tuturan bahasa pertama dan tuturan bahasa kedua menjadi tidak berarti baginya di sini, dan anak di sini seperti seseorang yang memiliki dua bahasa pertama.",
-    "istilahArab": "الثَّنَائِيَّةُ\nاللُّغَوِيَّةُ\nلِلرَّضِيعِ",
+    "istilahArab": "الثَّنَائِيَّة اللُّغَوِيَّةُ\nلِلرَّضِيعِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatur rasmiyyatu",
+    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatur\nrasmiyyatu",
     "arti": "'Bilingualisme resmi'",
     "penjelasan": "وَتَكُونُ الثَّنَائِيَّةُ فِي أجْهِزَةِ الْحُكُومَةِ وَوِزَارَاتِهَا؛ أَي تَكُونُ الثَّنَائِيَّةُ مُعْتَرَفًا بِهَا مِنَ الدَّوْلَةِ وَهُنَا يَتَوَجَّبُ أَنْ تَصْدِرَ كُلَّ نَشْرَةِ رَسْمِيَّةٍ بِاللَّغَتَيْنِ، وَالْمُرَاسَلَاتُ تَتِمُّ بِاللُّغَتَيْنِ، وَالْوَثَائِقُ وَالسَّجِلَّاتُ يَحْتَفِظُ بِهَا بِاللَّغَتَيْنِ. وَهَذَا مُخَالِفٌ لِوَضْعَ آخَرَ لَا تَعْتَرِفُ الْحُكُومَةُ فِيهِ إِلَّا بِلْغَةٍ وَاحِدَةٍ، رَغْمَ وُجُودِ لُغَتَيْنِ فِي بَلَدٍ مَا، وَتَكُونُ الْحُكُومَةُ فِي مِثْلِ هَذِهِ الْحَالَةِ مُعَارَضَةً لِلثَّنَائِيَّةِ اللُّغَوِيَّةِ، وَتَرَى فِيهَا خَطَرًا عَلَى الْوَحْدَةِ الْوَطَنِيَّةِ، أَوِ الْوَحْدَةِ الثَّقَافِيَّةِ، أَوِ الْهُويَةِ الْقَوْمِيَّةِ.\n\nDualisme (bahasa) ada di lembaga pemerintah dan kementerian; Artinya, dualisme diakui oleh negara. Di sini, setiap buletin resmi harus diterbitkan dalam kedua bahasa, korespondensi dalam kedua bahasa, dan dokumen serta catatan disimpan dalam kedua bahasa. Ini bertentangan dengan situasi lain di mana pemerintah hanya mengakui satu bahasa, meskipun ada dua bahasa di suatu negara, dan dalam kasus seperti itu pemerintah menentang bilingualisme, dan menganggapnya sebagai ancaman bagi persatuan bangsa, kesatuan budaya, atau identitas nasional.",
-    "istilahArab": "الثَّنَائِيَّةُ\nاللُّغَوِيَّةُ الرَّسْمِيَّةُ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالرَّسْمِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatusy Syari'iyyatu",
+    "transkripsiArab": "Tsunaiyyatul lughawiyyatusy\nSyar'iyyatu",
     "arti": "Bilingualisme Jalanan",
     "penjelasan": "وَهُوَ وَضْعَ يَسْمَعُ فِيهِ الْفَرْدَ اللَّغَتَيْنِ فِي الشارع وَالْحَوَانِيتِ وَالْمَقَاهِي وَالنَّوَادِي\n\nIni adalah situasi di mana orang mendengar kedua bahasa di jalan, di toko, kafe, dan klub.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ الشارعيَّة",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالشارعيَّة",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatush sha'idatu",
+    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatush\nsha'idatu",
     "arti": "Bilingualisme yang naik",
     "penjelasan": "في بَعْضِ الْحَالَاتِ عِنْدَمَا يَبْدَأُ الْفَرْدُ فِي تَعَلُّمِ اللَّغَةِ الثَّانِيَةِ نَرَى مَهَارَتَهُ فِيهَا تَزْدَادُ يَوْمًا بَعْدَ يَوْمِ، مَعَ زِيَادَةٍ تَعَرُّضِهِ لَهَا، دُونَ أَنْ يَضُرَّ هَذَا بِمَهَارَتِهِ فِي اللُّغَةِ الْأُولَى وَتُدْعَى هَذِهِ الْحَالَةُ الثَّنَائِيَّةُ اللُّغَوِيَّةُ الصَّاعِدَةُ، وَيَكُونُ الْمَرْءُ فِي هَذِهِ الْحَالَةِ مَسْرُورًا رَاضِيًا بِتَقَدُّمِهِ اللُّغَوِي فِي اللُّغَةِ الثَّانِيَةِ، وَغَيْرِ شَاعِرَ بِالْأَسَى أَوْ النَّدَمِ أَوْ الْقَلَقِ حَوْلَ مَصِيرِ الْأُولَى؛ لِأَنَّ اللَّغَةَ الْأُولَى لَمْ يَلْحَقِّ بهَا أَذًى.\n\nDalam beberapa kasus, ketika seseorang mulai belajar bahasa kedua, kita melihat keterampilan di dalamnya meningkat dari hari ke hari, dengan paparan yang meningkat, tanpa merusak keterampilannya dalam bahasa pertama. Keadaan ini disebut bilingualisme ke atas, dan dalam keadaan ini orang tersebut senang dan puas dengan kemajuan linguistiknya dalam bahasa kedua, dan tidak merasakan kesedihan,  penyesalan, atau kecemasan tentan asib bahasa pertama; Karena bahasa pertama tidak ada yang salah.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ الصَّاعِدَةُ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالصَّاعِدَةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatuth tharhiyyatu",
+    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatuth\ntharhiyyatu",
     "arti": "'Bilingualisme subtraktif (ketika individu belajar bahasa kedua dengan mengorbankan bahasa pertama yang berarti bahwa individu sering kehilangan keterampilan dan kefasihan dalam bahasa utama mereka, jika terutama bahasa utama tidak diperkuat).",
     "penjelasan": "في بعض الخُرُوفِ، يَجِدُ الْمَرْءُ أَنْ تَعْلَمَ اللُّغَةَ الثَّانِيَةَ يُهَدِّدُ مَصِيرَ لُغَتِهِ الْأُولَى، مِثَالُ ذَلِكَ الْأَفَلَيَّاتُ الْمُهَاجِرَةُ إِلَى بَلَدٍ كَبِيرٍ مِثْلَ أَمِيرِكَا؛ حَيْثُ يُرْسَلُ الْأَطْفَالُ إِلَى مَدَارِسٍ لِيَتَعَلَّمُوا فِيهَا بِاللُّغَةِ الثَّانِيَةِ الَّتِي لَا يُتْقِنُهَا هَؤُلَاءِ الْأَطْفَالُ، وَيُضْطَرُّ هَؤُلَاءِ إِلَى الْخُضُوعِ لِهَيْمَنَةِ لُغَةِ الْأَكْثَرِيَّةِ اللغةَ الثَّانِيَةَ عَلَى حِسَابِ اللُّغَةِ الْأُولَى الَّتِي تُصْبِحُ بِذَلِكَ مَقْصُورَةً عَلَى الاسْتِخْدَامِ في الْبَيْتِ وَقَدْ تُؤَدِّي هَذِهِ الْحَالَةُ إِلَى تَوَتُّر اجْتِمَاعِي، وَإِذَا تَفَاقَمَ الْحَالُ فَقَدْ يُؤَدِّي ذَلِكَ إِلَى ثَوْرَةٍ وَمُطَالَبَةٍ بِالْحُكْمِ الذَّاتِي أَوْ الاسْتِقْلَالِ.\n\nDalam beberapa keadaan, seseorang menemukan bahwa mempelajari bahasa kedua mengancam nasib bahasa pertamanya, misalnya minoritas imigran ke negara besar seperti Amerika; Di mana anak-anak dikirim ke sekolah untuk mempelajari bahasa kedua yang tidak dikuasai anak-anak ini, dan mereka dipaksa untuk tunduk pada dominasi bahasa mayoritas, yaitu bahasa kedua dengan mengorbankan bahasa pertama, yang dengan demikian menjadi terbatas untuk digunakan di rumah. Situasi ini dapat menyebabkan ketegangan sosial, dan bila situasinya memburuk, dapat menyebabkan revolusi dan tuntutan otonomi atau kemerdekaan.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ الطَّرْحِيَّةُ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالطَّرْحِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul",
-    "arti": "lughawiyyatun nāzilatu",
+    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatun\nnāzilatu",
+    "arti": "Bilingualisme resesif/mundur/turun",
     "penjelasan": "قَدْ يَجِدُ الشَّخْصُ ثُنَائِيُّ اللُّغَةِ نَفْسَهُ، بَعْدَ أَنْ أَتْقَنَ اللُّغَةَ الْأُولَى وَاللُّغَةَ الثَّانِيَةَ، يَفْقِدُ بَعْضَ مَهَارَاتِهِ فِي إِحْدَاهُمَا بِفِعْلِ ظُرُوفٍ مُعَيَّنَةٍ، وَأَهَمُ هَذِهِ الظُّرُوفِ عَدَمُ الاسْتِعْمَالِ؛ لِأَنَّ عَدَمَ الاسْتِعْمَالِ يُؤَدِّي إِلَى فَقَدِ الْمَهَارَةِ فِيهَا، وَأُولَى الْمَهَارَاتِ الَّتِي تُعَانِي مِنْ عَدَمِ الاسْتِعْمَالِ مَهَارَةُ الكَلَامِ وَمَهَارَةُ الْكِتَابَةِ ؛ أَي الْمَهَارَاتِ الْإِنْتَاجِيَّةِ أَوْ التَّعْبِيرِيَّةِ. وَيُلَاحَظُ أَنَّ مَهَارَاتِ الاسْتِقْبَالِ؛ أَي الاسْتِمَاعِ وَالْقِرَاءَةِ تَتَأَخَّرُ فِي تَعَرُّضِهَا لِلتَّرَاجُعِ.\n\nSeorang bilingual mungkin mendapati dirinya setelah dia menguasai bahasa pertama dan kedua, kehilangan beberapa keterampilannya di salah satu dari mereka karena keadaan tertentu, dan yang terpenting adalah kurangnya penggunaan. Karena tidak digunakan menyebabkan hilangnya keterampilan di dalamnya, dan keterampilan pertama yang diabaikan dalam keterampilan berbicara dan menulis; Tidak ada keterampilan produktif atau ekspresif. Perlu dicatat bahwa keterampilan penerimaan; Artinya, mendengarkan dan membaca akibat tertunda kemundurannya.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ النَّازِلَةٌ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالنَّازِلَةٌ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatul jam'iyyatu",
+    "transkripsiArab": "Ats-tsunäiyyatul lughawiyyatul\njam'iyyatu",
     "arti": "Bilingualisme aditif dan (bahasa budaya pertamanya dipertahankan dan diperkuat)'",
     "penjelasan": "في بَعْضِ الْحَالَاتِ عِنْدَمَا يَتَعَلَّمُ الْفَرْدَ اللَّغَةَ الثَّانِيَةَ، إِضَافَةً إِلَى اللُّغَةِ الْأُولَى؛ فَإِنَّ هَذَا التَّعَلَّمَ يَزِيدُهُ مَكَانَةً اجْتِمَاعِيَّةً وَقِيمَةً ثَقَافِيَّةً، وَلَا تُهَدِّدُ مَعْرِفَتَهُ لِلُّغَةِ الثَّانِيَةِ مَعْرِفَتَهُ لِلُغَةِ الْأُولَى، كَمَا لَا تَتَنَاقَضُ الْقِيمُ وَالثَّقَافَةُ الَّتِي تَحْمِلُهَا اللَّغَةَ الْأُولَى مَعَ الْقِيمِ وَالثَّقَافَةِ الَّتِي تَحْمِلُهَا اللُّغَةَ الثَّانِيَةَ. وَتُدْعَى هَذِهِ الْحَالَةُ الثَّنَائِيَّةُ اللُّغَوِيَّةُ الْجَمْعِيَّةَ، وَمِنْ أَمْثِلَتِهَا الْمُسْلِمُ الْبَاكِسْتَانِيُّ الَّذِي يَعْرِفُ الْعَرَبِيَّةَ وَالْأَرْدِيَةَ، إِذْ لَا تَعَارُضَ بَيْنَ ثَقَافَتَيْ اللُّغَتَيْنِ، كَمَا أَنَّ مَعْرِفَتَهُ لِلُغَةِ الثَّانِيَةِ، وَهِيَ الْعَرَبِيَّةُ، تُعَزِّزُ مِنْ مَكَانَتِهِ الاجْتِمَاعِيَّةِ بَيْنَ قَوْمِهِ.\n\nDalam beberapa kasus ketika individu mempelajari bahasa kedua, selain bahasa pertama; Pembelajaran ini meningkatkan status sosial dan nilai budayanya, dan pengetahuannya tentang bahasa kedua tidak mengancam pengetahuannya tentang bahasa pertama, karena nilai dan budaya yang dibawa oleh bahasa pertama tidak bertentangan dengan nilai dan budaya yang dianut oleh bahasa kedua. Kondisi ini disebut bilingualisme kolektif, contohnya adalah seorang Muslim Pakistan yang menguasai bahasa Arab dan Urdu; Karena tidak ada konflik antara budaya kedua bahasa tersebut, dan pengetahuannya tentang bahasa kedua, yaitu bahasa Arab, meningkatkan status sosialnya di antara bangsanya.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ الْجَمْعِيَّةُ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nالْجَمْعِيَّةُ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatu lilbālighi",
+    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatu\nlilbālighi",
     "arti": "'Bilingualisme dewasa",
     "penjelasan": "وَهُوَ مُصْطَلَحٌ يَدُلُّ عَلَى مَنْ يَتَأَخَّرَ فِي تَعَلُّمِ اللغَةِ الثَّانِيَةِ إِلَى مَا بَعْدَ مِنَ الثَّامِنَةَ عَشْرَةَ عَ\nIstilah ini mengacu pada seseorang yang mempelajari bahasa kedua lebih dari usia delapan belas tahun.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ لِلْبَالِغِ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nلِلْبَالِغِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatu lilmurāhiqi",
+    "transkripsiArab": "Ats-tsunāiyyatul lughawiyyatu\nlilmurāhiqi",
     "arti": "'Bilingualisme remaja",
     "penjelasan": "وَهُوَ مُصْطَلَحٌ يَدُلُّ عَلَى مَنْ يَتَأَخَّرَ فِي تَعَلُّمِ اللَّغَةِ الثَّانِيَةِ إِلَى مِنَ الْمُرَاهَقَةِ مَثَلًاً.\n\nIstilah ini mengacu pada seseorang yang belajar bahasa kedua di akhir masa remajanya, misalnya.",
-    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ لِلْمُرَاهِقِ",
+    "istilahArab": "الثَّنَائِيَّةُ اللُّغَوِيَّةُ\nلِلْمُرَاهِقِ",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
@@ -822,7 +815,7 @@
     "transkripsiArab": "haalatu 'lhaadhir",
     "arti": "Kala sekarang",
     "penjelasan": "الْحَالُ الْحَاضِرُ هُوَ الْحَالُ الَّذِي يُشِيرُ إِلَى الوَ قْتِ الْحَالِي\n\nhaalatu 'l-haadhiru huwa haalatu 'I-ladzii yusyayyiru ila 'l-waqti 'l-haali \nKala sekarang adalah kala yang menunjukkan masa saat ini.",
-    "istilahArab": "الحال\nالحاضر",
+    "istilahArab": "الحال الحاضر",
     "kategoriIstilah": "Sintaksis, Morfologi"
   },
   {
@@ -835,7 +828,7 @@
   {
     "transkripsiArab": "al-halah",
     "arti": "Kasus",
-    "penjelasan": "الْحَالَةُ هِي ترتبط الفئاتُ النَّحْوِيَّةُ الْأَسْمَاءَ أَو الصَّفَاتِ الَّتِي تُشِيرُ إِلَى تَغْيِيرَاتِ فِي الشَّكْلِ ب وظيفتها في الجُمْلَةِ .\n\nal-halatu hiya tartabitu 'l-fi?ātu 'n-nahwiyyatu 1-Pasma?a ?aw 's-shifāti 'l-latī tušīru ila tagyīrātin fi 'š-šakli biwazhīfatiha fi 'l-jumlati\n\nKasus adalah kategoriIstilah gramatikal nomina atau adjektiva yang menunjukkan adanya perubahan bentuk berkaitan dengan fungsionalnya dalam sebuah kalimat",
+    "penjelasan": "الْحَالَةُ هِي ترتبط الفئاتُ النَّحْوِيَّةُ الْأَسْمَاءَ أَو الصَّفَاتِ الَّتِي تُشِيرُ إِلَى تَغْيِيرَاتِ فِي الشَّكْلِ ب وظيفتها في الجُمْلَةِ .\n\nal-halatu hiya tartabitu 'l-fi?ātu 'n-nahwiyyatu l-asma?a ?aw 's-shifāti 'l-latī tušīru ila tagyīrātin fi 'š-šakli biwazhīfatiha fi 'l-jumlati\n\nKasus adalah kategoriIstilah gramatikal nomina atau adjektiva yang menunjukkan adanya perubahan bentuk berkaitan dengan fungsionalnya dalam sebuah kalimat",
     "istilahArab": "الحالة",
     "kategoriIstilah": "Sintaksis"
   },
@@ -896,8 +889,8 @@
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "Haalatu al-",
-    "arti": "intiqaali, haalatu al-maf'ul ilayh",
+    "transkripsiArab": "Haalatu al-intiqaali, \nhaalatu al-maf'ul ilayh",
+    "arti": "Kasus alatif",
     "penjelasan": "مُصْطَلَحٌ يُسْتَخْدَمُ فِي الْوَصْفِ النَّحْوِيِّ؛ لِلْإِشَارَةِ إِلَى حَالَةٍ إِعْرَابِيَّة، تُعَبِّرُ عَنْ مَعْنَى إِلَى الْمَكَانِ، أَوْ نَحْوَ الْمَكَانِ) to towards a place ، وَيُمَتِّلُ اللُّغَوِتُونَ لِذَلِكَ بِاللُّغَةِ الْفِنْلَنْدِيَّةِ.\n\nIstilah yang digunakan dalam deskripsi tata bahasa; Untuk menunjukkan kasus infleksi, mengungkapkan makna (ke suatu tempat atau menuju suatu tempat), dan ahli bahasa menyatakannya dalam bahasa Finlandia.",
     "istilahArab": "حَالَةُ الانْتِقَالِ، الْمَفْعُولِ حَالَةُ إِلَيْهِ",
     "kategoriIstilah": "Morfologi, Sintaksis"
@@ -910,15 +903,15 @@
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "Hälatul Maf üliyyati, Hälatun Nashbi",
+    "transkripsiArab": "Haalatul Maf'uliyyati, \nHaalatun Nashbi",
     "arti": "Kasus Akusatif",
     "penjelasan": "يَدُلُّ هَذَا الْمُصْطَلَحُ فِي اللُّغَاتِ الَّتِي تُعْبِرُ عنِ الْعَلَاقَاتِ النَّحْوِيَّةِ بِوَاسِطَةِ الإِعْرَابِ أَوْ فِي اللُغَاتِ التَّصْرِيفِيَّةِ عَلَى الصَّيغَةِ الَّتِي تَقَعُ مَفْعُولًا لِلْفِعْلِ، وَتَكُونُ تِلْكَ الصِّيغَةُ إِسْمًا أَوْ ضَمِيرًا وَهُنَاكَ بَعْضُ اللُّغَاتِ كَالْإِنْجْلِيزِيَّةِ الَّتِي تُعَبِّرُ عَنْ حَالَةِ الْمَفْعُولِيَّةِ بِوَاسِطَةٍ نِظَامِ الْكَلِمَاتِ، كَمَا فِي قَوْلِنَا ؛ حَيْثُ إِنَّ\"postman dogs bites\" النَّحْوَ التَّقْلِيدِي يَقُولُ عَنْ كَلِمَةِ \"postman\" إِنَّهَا مَفْعُولٌ، وَيُمْكِنُ اسْتِعْمَالُهَا فَاعِلًا فِي الْجُمْلَةِ نَفْسِهَا عَنْ طَرِيقِ تَغْيِيرِ نِظَامِ الْكَلِمَاتِ فَنَقُولُ: .\"postman bits dogs\"\n\nMakna dari istilah ini dalam bahasa yang mengekspresikan hubungan gramatikal melalui tanda baca, atau dalam bahasa konjugasi pada bentuk yang menjadi objek dari kata kerja, dan bentuk tersebut dapat berupa kata benda atau kata ganti. Ada beberapa bahasa seperti bahasa Inggris yang mengekspresikan kasus objek melalui sistem kata-kata, seperti dalam kalimat \"dogs bites postman\"; di mana tatabahasa tradisional mengatakan bahwa kata \"postman\" adalah objek, dan dapat digunakan sebagai subjek dalam kalimat yang sama dengan mengubah sistem kata-kata; sehingga kita mengatakan: \"postman bits dogs\"",
     "istilahArab": "حَالَةُ الْمَفْعُوْلِيَّةِ, حالة النَّصْبِ",
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "Habataun",
-    "arti": "Nahwiyyatun",
+    "transkripsiArab": "Habsatun Nahwiyyatun",
+    "arti": "Kebutahurufan",
     "penjelasan": "مُصْطَلَحٌ يُسْتَخْدَمُ فِي عِلْمِ اللُّغَةِ العَبَّادِي لِلدُّلَالَةِ عَلَى عَدَمِ قُدْرَةِ المُتَكَلِّمِ عَلَى فَهُم التراكيب النَّحْوِيَّةِ وَإِنْتاجِها ، عَلَى الرَّغْمِ مِنْ قُدْرَتِهِ عَلَى فَهُمِ الأَلْفاظِ المُفْرَدَةِ ونطقها بطريقة صحيحة.\n\nSebuah istilah yang digunakan dalam linguistik devosional untuk menunjukkan ketidakmampuan pembicara untuk memahami dan menghasilkan struktur gramatikal, Terlepas dari kemampuannya untuk memahami satu kata dan mengucapkannya dengan benar.",
     "istilahArab": "حَبْسَةٌ نَحْوِيَّةٌ",
     "kategoriIstilah": "Psikolinguistik, Neurolinguistik"
@@ -966,7 +959,7 @@
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 'I-islami",
+    "transkripsiArab": "?al-xitābu 'l-i'lami",
     "arti": "wacana informatif",
     "penjelasan": "خِطَابَاتٌ تَحْتَوِي عَلَى مَعْلُومَاتٍ وَاضِحَةٍ جِدَّ\n\nxitābātu tahtawi Sala mallūmāti wādihatin jiddan\n\nwacana informatif adalah wacana yang mengandung informasi yang sangat jelas",
     "istilahArab": "الخطاب الإعلامي",
@@ -980,112 +973,112 @@
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 't-talabbi",
+    "transkripsiArab": "?al-xitābu 't-ta'abbi",
     "arti": "wacana fatik",
     "penjelasan": "خِطَابٌ يُرَكِّز عَلَى قَنَواتِ الاتِّصَالِ .\n\nKhitaabun yurakkizu Sala qanawaati 1-itishaali \n\nwacana fatik adalah wacana yang berpusat pada saluran komunikasi",
     "istilahArab": "الخطاب التعبي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 't-tasbiri",
+    "transkripsiArab": "?al-xitābu 't-ta'biri",
     "arti": "wacana ekspresif",
-    "penjelasan": "خطَابٌ يُرَكِّز عَلَى الرِّسَالَةِ .\n\nKhitaabun yurakkizu Sala 'r-risaalati \n\nwacana ekspresif adalah wacana yang berpusat pada pengirim pesan",
+    "penjelasan": "خطَابٌ يُرَكِّز عَلَى الرِّسَالَةِ .\n\nKhitaabun yurakkizu ala 'r-risaalati \n\nwacana ekspresif adalah wacana yang berpusat pada pengirim pesan",
     "istilahArab": "الخطاب التعبيري",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 't-tallimi",
+    "transkripsiArab": "?al-xiṭābu 't-ta'limi",
     "arti": "wacana intruktif",
     "penjelasan": "خِطَابٌ يَتَضَمَّن مؤشراتٍ وَقَوَاعِد ولوائح وإر شادات\nxitābun yatadammani mu?aššarātin waqawalidin walawa?ihin wa ?iršādātin \n\nwacana intruktif adalah wacana yang menampilkan penunjuk, aturan, peraturan, dan pedoman.",
     "istilahArab": "الخطاب التعليمي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 't-tafsiri",
+    "transkripsiArab": "?al-xiṭābu 't-tafsiri",
     "arti": "wacana eksplikatif",
     "penjelasan": "خِطَابٌ يَحْتَوِي عَلَى شَرح ويهدف إلى السَّمَا ح لِلْقُرَّاء بِفَهُم ظَاهِرة ما .\n\nxitābun yahtawi Sala šarhi wayahdifu ?ila 's-samahi li l-qurra?i bifahmi ðähiratin má \n\nwacana eksplikatif adalah wacana yang mengandung suatu penjelasan dan bertujuan agar para pembaca dapat memahami suatu fenomena",
     "istilahArab": "الخطاب التفسيري",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "Pal-xitābu 'l-jadali",
+    "transkripsiArab": "al-xiṭābu 'l-jadali",
     "arti": "wacana argumentatif",
     "penjelasan": "الخِطَابَاتِ الَّتِي تَهْدِفُ إِلَى التَّأثير عَلَى الآراء أو المواقف أو السلوكيات أو تغييرهَا وَحَتَّى هَـ ز معتقدات الْقَارِئ أَوْ الْمُسْتَمِعِ بِأَكْمَلِه .\n\n?al- xitābātu 'l-latī tahdifu ?ila 't-ta?diri Sala 'I-?ārā?a ?aw ?al-mawaqifi ?awi 's-sulūkiyāti ?aw taġyīrihā wa hatta hazza mustaqāti 'l-qari?i ?aw ?al-mustamisi bi ?akmalihi\n\nwacana argumentatif adalah wacana yang bertujuan untuk mempengaruhi, mengubah pendapat, sikap atau tingkah laku bahkan menggoyahkan keyakinan pembaca atau keseluruhan pendengarnya.",
     "istilahArab": "الخطاب الجدلي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "xitābu hiwāri",
+    "transkripsiArab": "xiṭābu hiwāri",
     "arti": "wacana dialog",
     "penjelasan": "الخطاب الذي يجريه شخصان أو أكثر مباشرة وثنائي الاتجاه بطبيعته\n\nAl-khithaabu l-ladzi yujriihi syakhshaani aw aktsaru mubaasyaratan esydunssiyu \"I-iyyijaahi bithabii Satihi\n\nwacana dialog adalah wacana yang dilakukan oleh dua orang atau lebih secara langsung yang bersifat dua arah",
     "istilahArab": "خطاب الحوار",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "Pal-xitābu 's-sardi",
+    "transkripsiArab": "al-xiṭābu 's-sardi",
     "arti": "wacana naratif",
     "penjelasan": "خطَابٌ يَحْتَوِي عَلَى سِلْسِلَةٍ مِنَ الْأَحْدَاثِ ال تي تَحْدُثُ فِي شَكل .\n\nxitabun yahtawi Sala silsilatin mina 'I-Puhdavi 'l-lati tahaduva fi šakli\n\nwacana naratif adalah wacana yang mengandung serangkaian peristiwa yang terjadi pada seorang tokoh",
     "istilahArab": "الخطاب السردي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 's-sayāgī",
+    "transkripsiArab": "?al-xiṭābu 's-sayāgī",
     "arti": "wacana kontekstual",
     "penjelasan": "الخطاب الذي يركز على السياق الذي تستخدم فيه اللغة\n\nAl-khithaabu 'l-ladzi yurakkizu Sala 's-siyaaqi 'l-ladzi tastakhdamu fiihi 1-lughatu \n\nwacana kontekstual adalah wacana yang berfokus pada konteks pemakaian bahasa.",
     "istilahArab": "الخطاب السياقي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 's-šafri",
+    "transkripsiArab": "?al-xiṭābu 's-šafri",
     "arti": "wacana puitik",
     "penjelasan": "الخطاب الذي يسلط الضوء على عناصر الرسالة في التواصل\nAl-khithaabu 'I-ladzii yusallithu 'dh-dhowa Sala Sanaashiri 'r-risaalati fi 't-tawaashuli \n\nwacana puitik adalah wacana yang menonjolkan unsur pesan dalam komunikasi",
     "istilahArab": "الخطاب الشعري",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 's-šafahi",
+    "transkripsiArab": "?al-xiṭābu 's-šafahi",
     "arti": "wacana lisan",
     "penjelasan": "الْخِطَابُ الَّذِي يَتِمُّ تَقْدِيمُه بِاللغة المنطوقة أَوْ مِنْ خِلَالٍ وَسَائِلُ الإعلام المنطوقة .\nPal-xitābātu 'l-laði yatimmu taqdimuhu bi 'I-lugati 'I-mantūqati ?aw min xilāli wa sā?ili ?al-?islāmi 'I- manțūqati\n\nwacana lisan adalah wacana yang disampaikan dengan bahasa lisan atau lewat media lisan",
     "istilahArab": "الخطاب الشفهي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu l-kitābī",
+    "transkripsiArab": "?al-xiṭābu l-kitābī",
     "arti": "wacana tulisan",
     "penjelasan": "الْخَطَّابُ فِي شَكْلِ سِلْسِلَة مِنَ الْجُمَلِ الَّتِي تُ سْتَخْدَم مَجْمُوعة مُتَنَوْعَة مِنَ اللَّغَةِ الْمَكْتُ وبة\n?al- xitābātu fi šakli silsilati mina 'I-jumali 'I-lati tastaxdim majmüsati mina 'I-lugati 'I-maktübati\n\nwacana tulisan adalah wacana yang berupa rangkaian kalimat yang menggunakan ragam bahasa tulis",
     "istilahArab": "الخطاب الكتابي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 1-lafzi",
+    "transkripsiArab": "?al-xiṭābu 1-lafzi",
     "arti": "wacana verbal",
     "penjelasan": "خطاب مرتبط باكتمال بنية اللغة\nKhitaabu murtabithu biktimaali binyati I-lughatiKhitaabu murtabithu biktimaali binyati I-lughati \n\nwacana verbal adalah wacana yang diidentikkan  dengan kelengkapan struktur bahasa",
     "istilahArab": "الخطاب اللفظي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu 'l-marjisi",
+    "transkripsiArab": "?al-xiṭābu 'l-marjisi",
     "arti": "wacana referensial",
     "penjelasan": "يَسْتَخْدِمٍ عِنْدَمَا لَا يُرِيدُ الْمُرْسِل الظهور ، بَلْ يُرِيدُ تَسْلِيطُ الضَّوْءِ عَلَى الْمَرْجِعِ أَو الشَّي ءِ الَّذِي يَتَحَدَّثَ عَنْهُ .\n\nYastaxdamu Sindamā la yurīdu 'l-mursilu 'ō-ðuhūri, bal yurīdu taslīța 'd-daw?i Sala 'I-marjisi ?aw 's- šay?i 'l-lažī yatahadu Sanhu\n\nwacana referensial adalah digunakan apabila pengirim tidak ingin tampil, melainkan ia ingin menonjolkan acuan atau hal yang dibicarakannya",
     "istilahArab": "الخطاب المرجعي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xiţābu '1-wasfi",
+    "transkripsiArab": "?al-xiṭābu '1-wasfi",
     "arti": "wacana deskriptif",
     "penjelasan": "خطَابٌ يُقَدِّم تَمْثِيلًا أَوْ صُورَةٍ لِشَيْءٍ مَا أَوْ شَ خص مَا يَتِمُّ عِرْضَه عَادَة بِالتَّفْصِيل .\n\nxitābun yuqaddimu tamvilä ?aw şüratan lišay?a ma ?aw šaxşin mā yatimmu Sarduhu Sadatan bi 't-tafşīli\n\nwacana deskriptif adalah wacana yang mengemukakan representasi atau gambaran tentang sesuatu atau seseorang yang biasanya ditampilkan secara rinci",
     "istilahArab": "الخطاب الوصفى",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "?al-xitābu gayra 'l-lafzi",
+    "transkripsiArab": "?al-xiṭābu gayra 'l-lafzi",
     "arti": "wacana nonverbal",
     "penjelasan": "خطاب يتكون من عناصر غير لغوية\nKhitaabu yatakawwanu min Sanashira ghaira lughawiyyah\n\nwacana nonverbal adalah wacana yang terdiri dari unsur-unsur nonkebahasaan",
     "istilahArab": "الخطاب غير اللفظي",
     "kategoriIstilah": "Analisis Wacana"
   },
   {
-    "transkripsiArab": "xitābu munājāti",
+    "transkripsiArab": "xiṭābu munājāti",
     "arti": "wacana monolog",
     "penjelasan": "الخطابات التي لا تنطوي على شكل خطاب حواري أو محادثات بين طرفين مهتمين\n\nAl-khithaabaatu 'l-latii laa tanthawii Sala syakli khithaabin hiwaariyyin aw muhaadatsatin bayna tharafaini muhtammayni\n\nwacana monolog adalah wacana yang tidak melibatkan bentuk tutur percakapan atau pembicaraan dua pihak yang berkepentingan",
     "istilahArab": "خطاب مناجاة",
@@ -1232,7 +1225,7 @@
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "şä?it",
+    "transkripsiArab": "şā?it",
     "arti": "vokal",
     "penjelasan": "الصوت الذي يشكل نواة أو قمة مقطع لفظي\n\naş-şautu 'lladzi yaškilu nawāta Papu qamta maqțisu lafzī\n\nBunyi yang membentuk inti atau puncak suku kata",
     "istilahArab": "صائت",
@@ -1360,8 +1353,8 @@
   {
     "transkripsiArab": "ilmu 'aswati 'nnutqi",
     "arti": "Fonetik Artikulatoris",
-    "penjelasan": "أحد فروع الصوتيات الذي يقوم بدارسة النطق والطرق التي يقوم بخلالها البشر بالحديث طرق النطق)\nPahadu furūsu 'şşautiyāti 'lladzī yaqūmu bidārisati 'Inutqi wa 'tturqi; llati yaqümu bixalālihā 'Ibašri bi 'lhadīvi (tarqi 'nnutqi)\nCabang fonetik yang mempelajari pelafalan dan cara manusia berbicara",
-    "istilahArab": "علم\nالأصوات\nالنطقى",
+    "penjelasan": "أحد فروع الصوتيات الذي يقوم بدارسة النطق والطرق التي يقوم بخلالها البشر بالحديث طرق النطق)\nahadu furūsu 'şşautiyāti 'lladzī yaqūmu bidārisati 'Inutqi wa 'tturqi; llati yaqümu bixalālihā 'Ibašri bi 'lhadīvi (tarqi 'nnutqi)\nCabang fonetik yang mempelajari pelafalan dan cara manusia berbicara",
+    "istilahArab": "علم الأصوات النطقى",
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
@@ -1442,10 +1435,10 @@
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "Ajzun Istii'aabii'amma tun",
+    "transkripsiArab": "Ajzun Istii'aabii'ammatun",
     "arti": "agnosia",
     "penjelasan": "تَدُلُّ كَلِمَةٌ agnosia في أَصْلِ وَضْعِهَا اللُّغَوِيِّ عَلَى عَدَمٍ المَقْدِرَةِ عَلَى تَأْوِيلِ الأَحاسيس ، وَمِن ثُمَّ عَدَمُ مُلاحَظةِ الأشياء بِسَبَبٍ خَلَلٍ في الدماغ. وَيُسْتَخْدَمُ المُصْطَلَحُ في عِلْمِ اللغَةِ العَيَّادِي لِلإِشَارَةِ إِلَى فِقْدَانِ القُدْرَةِ عَلَى فهم المعاني اللُّغَوِيَّةِ المَسْمُوعَةِ وَالْمَقْرُوءَةِ ، وَالْعَجْزِ عن تأويل الكثيرات الحسيَّة كَالْمُرَتِّبَاتِ وَالْمَسْمُوعَاتِ ، وَيَعُودُ السَّبَبُ في هَذَا العَجْزِ إِلَى تَلْفِ المَرْكَزِ المُخْتَصَّ بِعَمَلِيَّةِ الاسْتِيعَابِ فِي الدَّمَاعُ\n\nKata agnosia, dalam asal linguistiknya menunjukkan ketidakmampuan untuk menafsirkan secara konkrit/jelas, dan kemudian tidak memperhatikan hal-hal karena kerusakan pada otak. Istilah ini digunakan dalam linguistik klinis untuk merujuk pada hilangnya kemampuan memahami makna linguistik yang dan didengar dan dibaca, Ketidakmampuan untuk menafsirkan susunan kata secara konkrit seperti catatan dan suara. Alasan kekurangan ini adalah karena kerusakan pada pusat reabsorpsi di otak.",
-    "istilahArab": "عَجْزٌ، عَمَّةٌ اسْتِيعَابِي",
+    "istilahArab": "عَجْزٌ، اسْتِيعَابِي عَمَّة",
     "kategoriIstilah": "Neurolinguistik"
   },
   {
@@ -1468,13 +1461,6 @@
     "penjelasan": "مجموعة كلمات لها تركيب خاص يضفي عليها سمة العبارات المسكوكة التي تطابق\nالكلمة الواحدة.\n\nSekelompok kata yang memiliki susunan khusus yang memberinya ciri sebagai ungkapan tetap (idiomatik) yang setara dengan satu kata.",
     "istilahArab": "عِبارة",
     "kategoriIstilah": "Pragmatik"
-  },
-  {
-    "transkripsiArab": "ilmu 'l-",
-    "arti": "sam'iyyun",
-    "penjelasan": "تصطلح يَدُلُّ عَلَى أَحَدٍ فُرُوعَ عِلْمٍ الأَصْوَاتِ اللغويَّةِ ، وَيُطْلِقُ عَلَيْهِ أيضه تصطلح acoustics أي علم السُمْعِيَات وَهُوَ يَهْتِمُ بدِرَاسَةِ الخصائص المادية أو الفيزيَائِيَّةُ لِلْأَصْوَاتِ الْكِلَامِيَّةِ، خِلَالَ بَقَالِهَا عَبْرَ الْهَوَاءِ، فِي شَكُلِ مَوْجَاتٍ صوتية، مِنْ فَمِ الْمُتَكَلِّمِ إِلَى أَذْنِ السَّامِعِ وَذَلِكَ عَنْ طَرِيقِ اسْتِخْدَامِ الْأَجْهِزَةِ العلميَّةِ الَّتِي تَقِيسُ تِلْكَ الْمَوْجَاتِ وَنَصِفُهَا مَعَ الْاسْتِعَانَةِ بِالرِّيَاضِيَّاتِ وَالْفِيزِيَاءِ لِذَلِكَ يُطْلِقُ عَلَيْهِ أَيْضًا مُصْطَلَحُ\n\nSuatu istilah yang menunjukkan salah satu cabang fonologi linguistik, dan disebut juga istilah acoustics yaitu ilmu akustik, Ini berkaitan dengan studi tentang materi atau sifat fisik bunyi ujaran, saat bergerak melalui udara, dalam bentuk gelombang suara, dari mulut pembicara ke telinga pendengar; Ini dilakukan dengan menggunakan perangkat ilmiah yang mengukur dan menjelaskan gelombang ini dengan bantuan matematika dan fisika. Oleh karena itu disebut juga istilah",
-    "istilahArab": "عِلمُ السُّمْعِيَا ت",
-    "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
     "transkripsiArab": "Ilmu al-lughoti al-jabriyyu",
@@ -1526,7 +1512,7 @@
     "kategoriIstilah": "Sintaksis, Morfologi"
   },
   {
-    "transkripsiArab": "Pal-falul khitabi",
+    "transkripsiArab": "al-falul khitabi",
     "arti": "Tindak tutur lokusi",
     "penjelasan": "الفعل الخطابي هي أفعال كلام للتغيير عن شيء ما .\n\n21-fi'lu Pi-khattabi niya af alu kalāmin li at-ta'biri 'an syai'in ma\n\nTindak tutur lokusi adalah tindak tutur untuk menyatakan sesuatu.",
     "istilahArab": "الفعل الخطابي",
@@ -1596,9 +1582,9 @@
     "kategoriIstilah": "Sintaksis, Morfologi"
   },
   {
-    "transkripsiArab": "fauqa lqat'iyyah",
-    "arti": "",
-    "penjelasan": "الأصوات التي تصاحب الأصوات المقطعية ، بما في ذلك الضغط والنبرة والنغمة\nPaşwātu 'llatī taşāhibu 'Imuqtaſyyah, bimā fi dzālika 'ddagati wa 'nnabrata wa 'nnigmati\nBunyi yang menyertai bunyi segmental, antara lain berupa tekanan, nada, dan intonasi",
+    "transkripsiArab": "fauqalqat'iyyah",
+    "arti": "Suprasegmental",
+    "penjelasan": "الأصوات التي تصاحب الأصوات المقطعية ، بما في ذلك الضغط والنبرة والنغمة\naşwātu 'llatī taşāhibu 'Imuqtaſyyah, bimā fi dzālika 'ddagati wa 'nnabrata wa 'nnigmati\nBunyi yang menyertai bunyi segmental, antara lain berupa tekanan, nada, dan intonasi",
     "istilahArab": "فوق القطعية",
     "kategoriIstilah": "Fonetik/Fonologi"
   },
@@ -1680,10 +1666,10 @@
     "kategoriIstilah": "Morfologi, Sintaksis, Semantik, Leksikologi/Leksikografi"
   },
   {
-    "transkripsiArab": "Kalimatut Tashaaqiyyati, Kalimatun Laa shiqatun",
+    "transkripsiArab": "Kalimatut Tashaaqiyyati, \nKalimatun Laa shiqatun",
     "arti": "Kata Aglutinatif",
     "penjelasan": "مُصْطَلَحْ نَحْوِيٌّ بَدَلَ عَلَى كَلِمَةٍ مُؤَلَّفَةٍ مِنْ مُورِفِيمِينَ أَوْ أَكْثَرَ مِنْ مِثْلِ الكَلِماتِ : bluebeard, blackboard, taller\n\nistilah tata bahasa untuk kata yang terdiri dari satu morfem atau lebih seperti kata-kata si janggut biru, papan tulis, lebih tinggi",
-    "istilahArab": "كلمة\nالتصاقية ، لاصقة\nكلمة",
+    "istilahArab": "كلمةالتصاقية،\nكلمة لاصقة",
     "kategoriIstilah": "Morfologi"
   },
   {
@@ -1694,10 +1680,10 @@
     "kategoriIstilah": "All/General"
   },
   {
-    "transkripsiArab": "Kalimatun muhiilatun, kalimatun ihaa latin, kalimatun 'aaidatin",
+    "transkripsiArab": "Kalimatun muhiilatun, \nkalimatun ihaa latin, \nkalimatun 'aaidatin",
     "arti": "'Kata anaforis'",
     "penjelasan": "مُصْطَلَحْ نَحْوِيٌّ يُفِيدُ الدَّلَالَةَ عَلَى كَلِمَةٍ تُحِيْلُ إِلَى كَلِمَةٍ ، سَبَقَ ذِكْرُهَا فِي الْكَلَامِ ، أو الْجُمْلَةِ ، وَمِنْ أَمْئِلَةِ ذَلِكَ الْجُمْلَةُ :\n\nIstilah sintaksis yang berfungsi untuk menunjukkan kata yang dirujuk, yang telah disebutkan referensinya dalam ungkpan sebelumnya.",
-    "istilahArab": "كَلِمَة مُحِيلَةٌ ، كَلِمَةٌ إِحَالَةٍ كلمة ، عَائِدَة",
+    "istilahArab": "كَلِمَة مُحِيلَةٌ،\n كَلِمَةٌ إِحَالَةٍ،\n كلمة عَائِدَة",
     "kategoriIstilah": "Sintaksis"
   },
   {
@@ -1743,10 +1729,10 @@
     "kategoriIstilah": "Morfologi"
   },
   {
-    "transkripsiArab": "/Lughat Atishaqiat, lughat lashiqat, lughat laqiyyah/",
-    "arti": "'Bahasa Aglutinatif'",
+    "transkripsiArab": "Lughat Atishaqiat, \nlughat lashiqat, \nlughat laqiyyah",
+    "arti": "Bahasa Aglutinatif",
     "penjelasan": "لُغَةٌ تَعْتَمِدُ فِي بِنَاءِ الْكَلِمَاتِ عَلَى الْإِلْصَاقِ ، وَكُلُّ كَلِمَةٍ فِيهَا عِبَارَةٌ عَنْ سِلْسِلَةٍ مُتَتَابِعَةٍ مِنَ الْمُورِفَاتِ morphs الَّتِي يُمَثَّلُ كُلُّ وَاحِدٍ مِنْهَا مُورْفِيمًا ، وَمِنْ ذَلِكَ dis / establish / الْكَلِمَةُ الْإِنْجِلِيزِيَّةُ .ment\n\nBahasa yang mengandalkan kata-kata yang berafiks, setiap kata di dalamnya merupakan rangkaian morfem yang berurutan, yang masing-masing mewakili morfem, seperti dalam kata bahasa inggris dis/ establish / ment.",
-    "istilahArab": "لُغَةُ التصاقية, لُغَةٌ لَاصِقَةٌ, لُغَةٌ لَقِيَّةٌ",
+    "istilahArab": "لُغَةُ التصاقية,\n لُغَةٌ لَاصِقَةٌ,\n لُغَةٌ لَقِيَّةٌ",
     "kategoriIstilah": "Morfologi"
   },
   {
@@ -1834,29 +1820,29 @@
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "Homofon",
-    "arti": "",
+    "transkripsiArab": "mujānasah ṣawtiyyah",
+    "arti": "Homofon",
     "penjelasan": "عبارة تشبه تعبير آخر. لكن المعنى ليس هو نفسه.\nUngkapan yang bunyinya sama dengan ungkapan lain. Tetapi maknanya tidak sama.",
     "istilahArab": "مجانسة صوتية",
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "Homograf",
-    "arti": "",
+    "transkripsiArab": "mujānasah kitābiyyah",
+    "arti": "Homograf",
     "penjelasan": "تعبير يشبه كتابته تعبير آخر. لكن المعنى ليس هو نفسه.\nUngkapan yang tulisannya sama dengan ungkapan lain. Tetapi maknanya tidak sama.",
     "istilahArab": "مجانسة كتابية",
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "Homonim",
-    "arti": "",
+    "transkripsiArab": "mujānasah lafẓiyyah",
+    "arti": "Homonim",
     "penjelasan": "تعبير يشبه شكله تعبير آخر. لكن المعنى ليس هو نفسه.\nUngkapan yang bentuknya sama dengan ungkapan lain. Tetapi maknanya tidak sama.",
     "istilahArab": "مجانسة لفظية",
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "mujtama' Pal-kalam",
-    "arti": "",
+    "transkripsiArab": "mujtama'a l-kalam",
+    "arti": "Masyarakat bahasa",
     "penjelasan": "مجتمع الكلام هو مجموعة من الأشخاص يمكنهم فهم بعضهم البعض عندما يتحدثون\nmujtami'u Pal-kalam huwa majmu'at min Pal-asykhas yumkinuhum fahim ba'dihim al-ba'ad in'dama yatahadaśūn. \nMasyarakat bahasa adalah sekelompok orang yang satu sama lain bisa saling mengerti sewaktu mereka berbicara.",
     "istilahArab": "مجتمع الكلام",
     "kategoriIstilah": "Sosiolinguistik"
@@ -1953,7 +1939,7 @@
     "kategoriIstilah": "Sintaksis"
   },
   {
-    "transkripsiArab": "musyärik",
+    "transkripsiArab": "musyārik",
     "arti": "Partisipan/peserta penutur",
     "penjelasan": "المشارك هو المشارك من المتحدث.\nhuwa ?al-musyārik min ?al-Pal-musyärik mutahaddis \nParticipant adalah peserta penutur.",
     "istilahArab": "مشارك",
@@ -1995,21 +1981,21 @@
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "masna 'Pasāsī",
+    "transkripsiArab": "maعnā 'l-ʔasāsī",
     "arti": "Makna dasar/denotatif",
     "penjelasan": "الكلمات التي لها معنى حقيقي وما هي\nalkalimātu 'llatī laha masna haqiqi wa mã hiya \nKata yang memiliki arti yang sebenarnya dan apa adanya",
     "istilahArab": "معنی الاساسي",
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "maina 'l?idāfi",
+    "transkripsiArab": "maعnā 'l-ʔidāfi",
     "arti": "Makna konotatif",
     "penjelasan": "كلمة تحتوي على معنى مجازي أو ليست كلمة حقيقية\nkalimatu tahtawiya Sala maina majāzī Pa?u laisati kalimati haqiqiyyah \nKata yang mengandung makna kias atau bukan kata sebenarnya",
     "istilahArab": "معنی الاضافي",
     "kategoriIstilah": "Semantik"
   },
   {
-    "transkripsiArab": "masna 'Imusjami",
+    "transkripsiArab": "maعnā 'Imusjami",
     "arti": "Makna Leksikal",
     "penjelasan": "المعنى الوارد في القاموس\nalma 'Iwāridu fi 'lqāmūs \nMakna yang terdapat di dalam kamus",
     "istilahArab": "معنی المعجمي",
@@ -2025,21 +2011,21 @@
   {
     "transkripsiArab": "al-mürfimu 'l-harriyu",
     "arti": "Morfem bebas",
-    "penjelasan": "المورفيم الحري هو مورفيم يمكن أن يقف بمفرده ويكون له معنى, مثل: رجل, مسلم, بيت\nPal-mürfimu 'l-harriyu huwa mürfimun yumkinu Pan yaqifu bi mufradihi wa yakūnu lahu masnan, mielu: rajulun, muslimun, baytun\nMorfem bebas adalah morfem yang dapat berdiri sendiri dan memiliki makna, رجل مسلم بيت seperti kata",
+    "penjelasan": "المورفيم الحري هو مورفيم يمكن أن يقف بمفرده ويكون له معنى, مثل: رجل, مسلم, بيت\nal-mürfimu 'l-harriyu huwa mürfimun yumkinu Pan yaqifu bi mufradihi wa yakūnu lahu masnan, mielu: rajulun, muslimun, baytun\nMorfem bebas adalah morfem yang dapat berdiri sendiri dan memiliki makna, رجل مسلم بيت seperti kata",
     "istilahArab": "المورفيم الحري",
     "kategoriIstilah": "Morfologi"
   },
   {
     "transkripsiArab": "al-mürfimu 's-sālibu",
     "arti": "Morfem kosong",
-    "penjelasan": "المورفيم السالب هو مورفيم لا يوجد في الكلام المنطوق أو المكتوب, وإنما يكون مسترا أو مقدرا أو محذوفا لعلة لغوية\n\nPal-mürfimu 's-salibu huwa mūrfimun là yūjadu fi 'l-kalāmi 'I-manțuqi Paw muqaddaran Paw mahdzüfan lisillatin luġawiyyatin\n\nMorfem kosong adalah morfem yang tidak ada dalam ucapan lisan atau tertulis, tetapi disembunyikan, diperkirakan, atau dihilangkan karena alasan linguistik",
+    "penjelasan": "المورفيم السالب هو مورفيم لا يوجد في الكلام المنطوق أو المكتوب, وإنما يكون مسترا أو مقدرا أو محذوفا لعلة لغوية\n\nal-mürfimu 's-salibu huwa mūrfimun là yūjadu fi 'l-kalāmi 'I-manțuqi Paw muqaddaran Paw mahdzüfan lisillatin luġawiyyatin\n\nMorfem kosong adalah morfem yang tidak ada dalam ucapan lisan atau tertulis, tetapi disembunyikan, diperkirakan, atau dihilangkan karena alasan linguistik",
     "istilahArab": "المورفيم السالب",
     "kategoriIstilah": "Morfologi"
   },
   {
     "transkripsiArab": "al-mürfimu l-qat'iyyatu",
     "arti": "Morfem segmental",
-    "penjelasan": "المورفيم القطعية هي المورفيم تتكون من أصوات أو ترتيبات صوتية مقطعية\nPaswatin Pal-mürfimi 'l-qatsiyyati hiya 'I-mürfimu tatakawwanu min Paw tartībātin şautiyyatin maqtasiyyatin\nMorfem segmental adalah morfem yang terdiri dari fonem atau susunan fonem segmental",
+    "penjelasan": "المورفيم القطعية هي المورفيم تتكون من أصوات أو ترتيبات صوتية مقطعية\naswatin Pal-mürfimi 'l-qatsiyyati hiya 'I-mürfimu tatakawwanu min Paw tartībātin şautiyyatin maqtasiyyatin\nMorfem segmental adalah morfem yang terdiri dari fonem atau susunan fonem segmental",
     "istilahArab": "المورفيم القطعية",
     "kategoriIstilah": "Morfologi"
   },
@@ -2051,24 +2037,24 @@
     "kategoriIstilah": "Morfologi"
   },
   {
-    "transkripsiArab": "Pal-mürfimu",
-    "arti": "fauga -qatsiyyatu",
-    "penjelasan": "المورفيم فوق القطعية هي شيء يصاحب الصوتيات ، والذي يمكن أن يكون في شكل إجهاد صوتي ، وأطوال ، وتوقفات ، واهتزازات صوتية تشير إلى مشاعر معينة\nPal-mürfimi fauqa 'l-qatsiyyati hiya šay?un yuşāhibuhu 'ş-şawtiyyāti, wa '1-ladzī yumkinu ?an yakūna fi šakli Pijhādin sawtiyyin, wa Patwalin, wa tawaqufätin, wa 'h-tizāzātin şawtiyyatin tušīru Pila mašāçira musayyanatin\nMorfem suprasegmental adalah sesuatu yang menyertai fonem-fonem, yang bisa berupa tekanan suara, panjang-pendek, getaran suara jeda, dan yang menunjukkan emosi tertentu",
+    "transkripsiArab": "al-murfimu fauqa \nl-qat'iyyatu",
+    "arti": "Morfem suprasegmental",
+    "penjelasan": "المورفيم فوق القطعية هي شيء يصاحب الصوتيات ، والذي يمكن أن يكون في شكل إجهاد صوتي ، وأطوال ، وتوقفات ، واهتزازات صوتية تشير إلى مشاعر معينة\nal-murfimi fauqa 'l-qat'iyyati hiya šay?un yuşāhibuhu 'ş-şawtiyyāti, wa '1-ladzī yumkinu ?an yakūna fi šakli Pijhādin sawtiyyin, wa Patwalin, wa tawaqufätin, wa 'h-tizāzātin şawtiyyatin tušīru Pila mašāçira musayyanatin\nMorfem suprasegmental adalah sesuatu yang menyertai fonem-fonem, yang bisa berupa tekanan suara, panjang-pendek, getaran suara jeda, dan yang menunjukkan emosi tertentu",
     "istilahArab": "المورفيم فوق القطعية",
     "kategoriIstilah": "Morfologi"
   },
   {
-    "transkripsiArab": "Ma'aalimu",
-    "arti": "sam'iyyatun",
+    "transkripsiArab": "Ma'aalimu sam'iyyatun",
+    "arti": "Fitur akustik",
     "penjelasan": "مُصْطَلَحٌ يَسْتَخْدِمُ فِي عِلْمِ الْأَصْوَاتِ اللُّغَوِيَّةِ ؛ لِلْحَدِيثِ عَنْ خَصَائِصِ الصَّوْتَ حِينَ تَحْلِيلِهِ فِي مُصْطَلَحَاتٍ تَتَّصِلُ بالنَّاحِيَةِ الْفِيزِيَائِيَّةِ ؛ كَالْتَرَدُّدِ وَالنَّعْمَةَ التَّوَافُقِيَّةِ مَعَ التَّرْكِيبِ وَالْمَوْجَةِ الصَّوْتِيَّةِ، وَهِي تُسَاعِدُ فِي تَصْنِيفِ الْأَصْوَاتِ الْكِلامِيَّةِ.\nIstilah yang digunakan dalam fonologi linguistik; Berbicara tentang ciri-ciri bunyi ketika menganalisisnya dalam kaitannya dengan aspek fisik; seperti frekuensi dan nada harmonik dengan struktur dan gelombang suara, Ini membantu mengklasifikasikan suara ucapan.",
-    "istilahArab": "مَعَالِمُ سَمْعِيَّةُ, سِمَاتِ\nفيزيائية\nمَلَامِحِ\nأكوستية",
+    "istilahArab": "مَعَالِمُ سَمْعِيَّةُ, سِمَاتِ\nفيزيائية مَلَامِحِ أكوستية",
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {
-    "transkripsiArab": "/Maf'ulun Fail, Maf'ulun bihi Fa'illi/",
+    "transkripsiArab": "Maf'ulun Fail, \naf'ulun bihi Fa'illi",
     "arti": "'Objek Agentif",
     "penjelasan": "اسْمٌ يُؤَدِّي مَوْقِعَهُ النَّحْوِيَّ وَالدَّلَالِيُّ إِلَى الْجَمْعِ بَيْنَ وَظِيفَتَيْ الْفَاعِلِ وَالْمَفْعُولِ مِثْلُ horse the فِي الْجُمْلَةِ He حَيْثُ يُؤَدِّي ; walked the horse the horse وَظِيفَةُ الْمَفْعُولِ بِهِ مِنَ النَّاحِيَةِ النَّحْوِيَّةِ ، وَهُوَ فَاعِلٌ فِي الْمَعْنَى ؛ لِأَنَّهُ ( أَي الْفَرَسَ ) هُوَ الَّذِي يَجْرِي.\n\nIsim yang posisi nahwu dan semantiknya mengarah ada gabungan fungsi subjek dan objek, seperti Kuda dalam kalimat Dia menunggangi kuda; Kata kuda menjalankan fungsi objek dalam istilah nahwu dan aktif dalam arti karena (kuda) yang berlari.",
-    "istilahArab": "مَفْعُولُ فاعل, مَفْعُولٌ بِهِ فَاعِلِي",
+    "istilahArab": "مَفْعُولُ فاعل,\n مَفْعُولٌ بِهِ فَاعِلِي",
     "kategoriIstilah": "Sintaksis"
   },
   {
@@ -2087,7 +2073,7 @@
   },
   {
     "transkripsiArab": "Maqbūliyyatu, Jawāzun",
-    "arti": "'Akseptabilitas'",
+    "arti": "Akseptabilitas",
     "penjelasan": "مُصْطَلَحٌ يَدُلُّ عَلَى الْمَدَى الَّذِي يَحْكُمُ خَلَّالَةَ ابْنَاءِ اللُّغَةِ عَلَى الْمَادَّةِ اللُّغَوِيَّةِ الَّتِي تَحْتَمِلُ الْوُجُودَ فِي لُغَتِهِمْ .\nGramatikal atau berterima: Istilah yang digunakan untuk menunjukkan sejauh mana para penutur bahasa menilai materi linguistik yang bisa ada dalam bahasa mereka.",
     "istilahArab": "مَقْبُولِيَّةٌ, جَوَازُ",
     "kategoriIstilah": "Sintaksis"
@@ -2107,14 +2093,14 @@
     "kategoriIstilah": "Leksikologi/Leksikografi, Semantik"
   },
   {
-    "transkripsiArab": "Mughayyir",
-    "arti": "Haraki",
+    "transkripsiArab": "Mughayyir Haraki",
+    "arti": "Variabel kinetik, alternatif kinetik",
     "penjelasan": "هُنَاكَ مُصْطَلَحٌ يَدُلُّ عَلَى الْحَرَكَةِ الْجِسْميَّةِ الَّتِي تُصَاحِبُ الْكَلَامَ أَوْ تَسُدُّ مَسَدَّهُ مِثْلَ هَزّ الكَتِفَيْنِ ، والِ ابْتِسَامَةِ ، وَ الْعُبوس\n\nTerdapat istilah yang menunjukkan gerakan fisik yang menyertai ucapan, seperti berjabat tangan, tersenyum, mengerutkan kening...,",
     "istilahArab": "مُتَغَيَّرُ حَرَكِي, بَدِيلُ حركي",
     "kategoriIstilah": "Pragmatik"
   },
   {
-    "transkripsiArab": "Mutaghayyirun zamaniyyun, al-wakrun",
+    "transkripsiArab": "Mutaghayyirun zamaniyyun,\nal-wakrun",
     "arti": "Kronem",
     "penjelasan": "هُنَاكَ مُصْطَلَحٌ يَدُلُّ عَلَى طُولِ الصَّوْتِ اللغوي، وَيُؤَدِّي إِلَى إِبْرَازِ الْفُرُوقِ الْوَظيفِيَّةِ، يُسَمَّى chroneme، مِثْلَ: قَامَ وَقَامَا، فَطُولُ الْفَتْحَةِ حِينَ النُّطْقِ لِ (قَامَا) يَدُلُّ عَلَى أَنَّ الْفِعْلَ مُسْنَدٌ إِلَى أَلْفِ الاثنين.\n\nAda istilah yang menunjukkan panjang bunyi linguistik, dan mengarah pada perbedaan fungsional, disebut kronem, misalnya: qaama wa qaamaa, jadi panjang pembukaan saat mengucapkan (qaamaa) menunjukkan bahwa kata kerjanya didasarkan pada alif itsnain.",
     "istilahArab": "مُتَغَيْرٌ زَمَنِي, الْوَكُرُونَ",
@@ -2199,21 +2185,21 @@
   },
   {
     "transkripsiArab": "Nutqun ghayru lahjiyy",
-    "arti": "'Pengucapan tanpa aksen'",
+    "arti": "Pengucapan tanpa aksen",
     "penjelasan": "وَالْمَقْصُودُ بِهِ نُطْقُ اللُّغَةِ بِطَرِيقَةٍ مُحَايِدَةٍ لَا يَدُلُّ عَلَى مِنْطَقَةٍ جُغْرَافِيَّةٍ مُعَيَّنَةٍ\nPengucapan dialek ini dimaksudkan untuk mengucapkan bahasa dengan cara yang netral, tanpa menunjukan dialek geografis tertentu.",
     "istilahArab": "نُطْقُ غَيْرُ نُطْق لَهْجِي",
     "kategoriIstilah": "Sosiolinguistik"
   },
   {
-    "transkripsiArab": "Numtut-tanbīri, namüdhajut-tanbiri",
-    "arti": "'Pola aksen/dialek'",
+    "transkripsiArab": "Numtut-tanbīri, \nnamüdhajut-tanbiri",
+    "arti": "Pola aksen/dialek",
     "penjelasan": "مُصْطَلَحٌ يَدُلُّ عَلَى طَرِيقَةٍ تُعَاقِبُ النَّبْرَاتُ في التركيب.\nIstilah yang menunjukan pada cara pergantian aksen dalam sebuah komposisi,",
-    "istilahArab": "نُمْطُ التنبير نَمُوذَجُ التنيير",
+    "istilahArab": "نُمْطُ التنبير, نَمُوذَجُ التنيير",
     "kategoriIstilah": "Fonetik/Fonologi, Sosiolinguistik"
   },
   {
     "transkripsiArab": "Nizamut-tanbiri",
-    "arti": "'Sistem aksen'",
+    "arti": "Sistem aksen",
     "penjelasan": "مَا فِي اللُّغَةِ مِنَ النَّبْرَاتِ, وَالطَّرِيقَةِ الَّتِي تَتَّبَعُهَا فِي إِبْرَازِ الْمُقَاطِعِ الْمُخْتَلِفَةِ الْخَاصَّةِ بِالْكَلِمَةِ أَوِ الْجُمْلَةِ\nTerkait dengan bahasa pada suatu aksen dan cara yang diikuti dalam menyoroti suku kata yang berbeda dari sebuah kata atau kalimat",
     "istilahArab": "نِظَامُ التنبير",
     "kategoriIstilah": "Fonetik/Fonologi"
@@ -2254,10 +2240,10 @@
     "kategoriIstilah": "All/General"
   },
   {
-    "transkripsiArab": "Wahdatu tanbiriyyat, wahdatu nabriyyat",
+    "transkripsiArab": "Wahdatu tanbiriyyat, \nwahdatu nabriyyat",
     "arti": "Unit aksen",
     "penjelasan": "كَلِمَةٌ لَهَا نَبْرَةٌ وَاحِدَةٌ، أَوْ مَجْمُوعَةٌ مِنَ الكَلِمَاتِ، وَرَدَّتْ وَاحِدَةٌ مِنْهَا منبورة, دُونَ بَاقِي الْكَلِمَاتِ.\nKata yang memiliki aksen tunggal atau kumpulan dari kata yang salah satu pengucapannya ditekankan, tanpa ada yang tertinggal.",
-    "istilahArab": "وَحْدَةُ\nتنبيرية،\nوَحْدَةُ نَبْرِيَّة",
+    "istilahArab": "وَحْدَةُ تنبيرية،\nوَحْدَةُ نَبْرِيَّة",
     "kategoriIstilah": "Fonetik/Fonologi"
   },
   {

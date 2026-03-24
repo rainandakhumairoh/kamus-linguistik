@@ -88,7 +88,7 @@ val kategoriMap1 = mapOf(
 // ✅ Load JSON dari assets
 fun loadIstilahFromJson1(context: Context): List<IstilahData1> {
     return try {
-        val jsonString = context.assets.open("istilah_bagian1_old.json").bufferedReader().use {
+        val jsonString = context.assets.open("istilah_bagian1.json").bufferedReader().use {
             it.readText()
         }
         val jsonArray = JSONArray(jsonString)
