@@ -73,7 +73,7 @@ fun TentangApp(navController: NavHostController) {
         ) {
 
             Text(
-                text = "Aplikasi Kamus Linguistik Multibahasa ini dirancang untuk membantu pengguna memahami berbagai istilah linguistik secara lebih mudah dan komprehensif. Aplikasi ini menyediakan daftar istilah linguistik yang dilengkapi dengan penjelasan serta padanannya dalam beberapa bahasa, yaitu Arab, Indonesia, Inggris, dan Mandarin.",
+                text = "Aplikasi Kamus Linguistik Multibahasa ini merupakan pengembangan dari kamus versi cetak Kamus Linguistik Arab–Indonesia–Inggris–Mandarin karya Tubagus Chaeru Nugraha et al. (2023). Pengembangan ini dilakukan sebagai upaya menghadirkan media pembelajaran yang lebih praktis, interaktif, dan mudah diakses oleh pengguna.",
                 fontSize = 14.sp,
                 textAlign = TextAlign.Justify,
                 lineHeight = 22.sp,
@@ -84,7 +84,27 @@ fun TentangApp(navController: NavHostController) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "Melalui aplikasi ini, pengguna dapat mempelajari konsep-konsep dasar hingga lanjutan dalam bidang linguistik dengan cara yang praktis dan terstruktur. Aplikasi ini juga diharapkan dapat menjadi sumber referensi yang bermanfaat bagi mahasiswa, peneliti, maupun masyarakat umum yang tertarik pada kajian bahasa.",
+                text = "Aplikasi ini dirancang untuk membantu pengguna dalam memahami berbagai istilah linguistik secara lebih mudah dan komprehensif. Di dalamnya tersedia daftar istilah linguistik yang dilengkapi dengan penjelasan serta padanannya dalam beberapa bahasa, yaitu Arab, Indonesia, Inggris, dan Mandarin.",
+                fontSize = 14.sp,
+                textAlign = TextAlign.Justify,
+                lineHeight = 22.sp,
+                color = Color.DarkGray
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "Melalui aplikasi ini, pengguna dapat mempelajari konsep-konsep dasar linguistik secara lebih terstruktur dan sistematis. Selain itu, penyajian dalam bentuk digital memungkinkan pengguna untuk mengakses informasi dengan cepat serta meningkatkan efisiensi dalam proses pembelajaran.",
+                fontSize = 14.sp,
+                textAlign = TextAlign.Justify,
+                lineHeight = 22.sp,
+                color = Color.DarkGray
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "aplikasi ini diharapkan dapat menjadi sumber referensi yang bermanfaat, tidak hanya bagi mahasiswa dan peneliti, tetapi juga bagi masyarakat umum yang memiliki ketertarikan terhadap kajian bahasa.",
                 fontSize = 14.sp,
                 textAlign = TextAlign.Justify,
                 lineHeight = 22.sp,

@@ -270,7 +270,7 @@ fun ActionButtonsBagian1(istilah: DetailIstilah1Data) {
                     val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
                     val clip = ClipData.newPlainText(
                         "Istilah",
-                        "${istilah.istilahArab}\n${istilah.transkripsiArab}\n${istilah.arti}"
+                        "${istilah.istilahArab}\n${istilah.transkripsiArab}\n${istilah.arti}\n${istilah.penjelasan}"
                     )
                     clipboard.setPrimaryClip(clip)
                     Toast.makeText(context, "Istilah disalin!", Toast.LENGTH_SHORT).show()

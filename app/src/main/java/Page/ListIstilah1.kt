@@ -88,7 +88,7 @@ val kategoriMap1 = mapOf(
 // ✅ Load JSON dari assets
 fun loadIstilahFromJson1(context: Context): List<IstilahData1> {
     return try {
-        val jsonString = context.assets.open("istilah_bagian1.json").bufferedReader().use {
+        val jsonString = context.assets.open("istilah_bagian1_old.json").bufferedReader().use {
             it.readText()
         }
         val jsonArray = JSONArray(jsonString)
@@ -213,9 +213,9 @@ fun HeaderSection1(
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(R.drawable.character1),
+                painter = painterResource(R.drawable.character_det1),
                 contentDescription = null,
-                modifier = Modifier.size(100.dp)
+                modifier = Modifier.fillMaxWidth()
             )
         }
 

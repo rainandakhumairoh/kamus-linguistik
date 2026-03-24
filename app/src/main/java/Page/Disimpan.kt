@@ -26,6 +26,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 
 @Composable
 fun Disimpan(navController: NavHostController) {
@@ -115,6 +117,32 @@ fun Disimpan(navController: NavHostController) {
                 ) { istilah ->
                     SavedIstilahItem(
                         istilah = istilah,
+                        onItemClick = {
+                            // NAVIGATE KE DETAIL ISTILAH
+                            if (istilah.source == "Bagian1" || istilah.source.isEmpty()) {
+                                navigateToDetailIstilah1(
+                                    navController = navController,
+                                    transkripsiArab = istilah.transkripsiArab,
+                                    arti = istilah.arti,
+                                    penjelasan = "", // Tidak tersimpan
+                                    istilahArab = istilah.istilahArab,
+                                    kategoriIstilah = istilah.kategoriIstilah
+                                )
+                            } else if (istilah.source == "Bagian2") {
+                                navigateToDetailIstilah2(
+                                    navController = navController,
+                                    istilahInggris = "",
+                                    prononInggris = "",
+                                    arti = istilah.arti,
+                                    istilahArab = istilah.istilahArab,
+                                    transkripsiArab = istilah.transkripsiArab,
+                                    istilahMandarin = "",
+                                    transkripsiMandarin = "",
+                                    prononMandarin = "",
+                                    kategoriIstilah = istilah.kategoriIstilah
+                                )
+                            }
+                        },
                         onDelete = {
                             deleteIstilahFromPreferences(context, istilah.istilahArab)
                             savedIstilahList.value = getSavedIstilah(context)
@@ -133,12 +161,14 @@ fun Disimpan(navController: NavHostController) {
 @Composable
 fun SavedIstilahItem(
     istilah: SavedIstilah,
+    onItemClick: () -> Unit,
     onDelete: () -> Unit
 ) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .background(Color.White, RoundedCornerShape(12.dp))
+            .clickable { onItemClick() }
             .padding(16.dp)
     ) {
         Column(
@@ -218,7 +248,66 @@ fun SavedIstilahItem(
                 }
             }
 
-
+            // ✅ SOURCE BADGE
+            if (istilah.source.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(8.dp))
+                Box(
+                    modifier = Modifier
+                        .background(
+                            Color(0xFF206C7A).copy(alpha = 0.05f),
+                            RoundedCornerShape(4.dp)
+                        )
+                        .padding(horizontal = 8.dp, vertical = 2.dp)
+                ) {
+                    Text(
+                        text = "dari ${istilah.source}",
+                        fontSize = 10.sp,
+                        color = Color(0xFF206C7A),
+                        fontStyle = androidx.compose.ui.text.font.FontStyle.Italic
+                    )
+                }
+            }
         }
     }
+}
+fun navigateToDetailIstilah1(
+    navController: NavHostController,
+    transkripsiArab: String,
+    arti: String,
+    penjelasan: String,
+    istilahArab: String,
+    kategoriIstilah: String
+) {
+    val encodedTranskripsi = URLEncoder.encode(transkripsiArab, StandardCharsets.UTF_8.toString())
+    val encodedArti = URLEncoder.encode(arti, StandardCharsets.UTF_8.toString())
+    val encodedPenjelasan = URLEncoder.encode(penjelasan, StandardCharsets.UTF_8.toString())
+    val encodedIstilah = URLEncoder.encode(istilahArab, StandardCharsets.UTF_8.toString())
+    val encodedKategori = URLEncoder.encode(kategoriIstilah, StandardCharsets.UTF_8.toString())
+
+    navController.navigate(
+        "detailIstilah1/$encodedTranskripsi/$encodedArti/$encodedPenjelasan/$encodedIstilah/$encodedKategori"
+    )
+}
+
+fun navigateToDetailIstilah2(
+    navController: NavHostController,
+    istilahInggris: String,
+    prononInggris: String,
+    arti: String,
+    istilahArab: String,
+    transkripsiArab: String,
+    istilahMandarin: String,
+    transkripsiMandarin: String,
+    prononMandarin: String,
+    kategoriIstilah: String
+) {
+    val parts = listOf(
+        istilahInggris, prononInggris, arti, istilahArab,
+        transkripsiArab, istilahMandarin, transkripsiMandarin,
+        prononMandarin, kategoriIstilah
+    ).map { URLEncoder.encode(it, StandardCharsets.UTF_8.toString()) }
+
+    navController.navigate(
+        "detailIstilah2/${parts.joinToString("/")}"
+    )
 }

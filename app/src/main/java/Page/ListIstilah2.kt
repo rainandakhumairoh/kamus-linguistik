@@ -219,9 +219,9 @@ fun HeaderSection2(
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(R.drawable.character1),
+                painter = painterResource(R.drawable.character_det2),
                 contentDescription = null,
-                modifier = Modifier.size(100.dp)
+                modifier = Modifier.fillMaxWidth()
             )
         }
 
