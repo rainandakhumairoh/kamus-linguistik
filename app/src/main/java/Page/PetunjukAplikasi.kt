@@ -287,6 +287,35 @@ fun PetunjukApp(navController: NavHostController) {
                 modifier = Modifier
                     .fillMaxWidth()
             )
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            Text(
+                text = "BONUS: Pengenalan Karakter",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                lineHeight = 22.sp,
+                color =  Color(android.graphics.Color.parseColor("#206c7a")),
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                text = "Pada aplikasi ini terdapat karakter animasi yang merepresentasikan setiap bahasa yang ada pada kamus. Terdapat empat karakter yang menggambarkan empat bahasa yaitu Arab, Indonesia, Inggris, dan Mandarin.",
+                textAlign = TextAlign.Justify,
+                fontSize = 14.sp,
+                lineHeight = 22.sp,
+                color = Color.DarkGray
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.character3),
+                contentDescription = "petunjuk 5",
+                modifier = Modifier
+                    .fillMaxWidth()
+            )
         }
     }
 }
