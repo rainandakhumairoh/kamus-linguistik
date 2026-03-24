@@ -107,7 +107,7 @@ fun HomeScreen(navController: NavHostController) {
             // Bagian 1
             BagianCard(
                 title = "Bagian 1",
-                description = "Istilah Arab-Indonesia, dilengkapi dengan penjelasan dan transkripsinya",
+                description = "Istilah Arab-Indonesia, dilengkapi dengan penjelasan dan transliterasinya",
                 characterImage = R.drawable.character1,
                 onLihatClick = {
                     navController.navigate("ListIstilah1")

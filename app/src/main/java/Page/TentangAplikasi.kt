@@ -73,7 +73,7 @@ fun TentangApp(navController: NavHostController) {
         ) {
 
             Text(
-                text = "Aplikasi Kamus Linguistik Multibahasa ini merupakan pengembangan dari kamus versi cetak Kamus Linguistik Arab–Indonesia–Inggris–\nMandarin karya Tubagus Chaeru Nugraha et al. (2023). Pengembangan ini dilakukan sebagai upaya menghadirkan media pembelajaran yang lebih praktis, interaktif, dan mudah diakses oleh pengguna.",
+                text = "Aplikasi Kamus Linguistik Multibahasa ini merupakan pengembangan dari kamus versi cetak Kamus Linguistik Arab–Indonesia–Inggris–\nMandarin karya Tubagus Chaeru Nugraha et al. (2023). Pengembangan ini dilakukan sebagai upaya menghadirkan media pembelajaran yang lebih praktis dan mudah diakses oleh pengguna.",
                 fontSize = 14.sp,
                 textAlign = TextAlign.Justify,
                 lineHeight = 22.sp,
