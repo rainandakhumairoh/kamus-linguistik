@@ -177,7 +177,7 @@ fun topbar(
 ) {
         Box(
             modifier = Modifier
-                .height(87.dp)
+                .height(80.dp)
                 .fillMaxWidth()
                 .background(color = Color(android.graphics.Color.parseColor("#206c7a")))
                 .padding(10.dp)
@@ -246,7 +246,7 @@ fun BagianCard(
             lineHeight = 18.sp
         )
 
-        Spacer(modifier = Modifier.height(5.dp))
+        Spacer(modifier = Modifier.height(2.dp))
 
         // Character Images Row
         Row(
@@ -263,14 +263,14 @@ fun BagianCard(
             )
         }
 
-        Spacer(modifier = Modifier.height(5.dp))
+        Spacer(modifier = Modifier.height(2.dp))
 
         // Button
         Button(
             onClick = onLihatClick,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(48.dp),
+                .height(42.dp),
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(android.graphics.Color.parseColor("#206c7a"))
             ),
@@ -325,7 +325,7 @@ fun Sidebar(
 
                     // Logo
                     Image(
-                        painter = painterResource(id = R.drawable.logodashboard),
+                        painter = painterResource(id = R.drawable.logosidebar),
                         contentDescription = "App Logo",
                         modifier = Modifier
                             .fillMaxWidth()
