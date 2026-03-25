@@ -79,11 +79,10 @@ fun HomeScreen(navController: NavHostController) {
         // Header dengan background warna teal
         Box(
             modifier = Modifier
-                .height(220.dp)
+                .height(200.dp)
                 .fillMaxWidth()
                 .background(color = Color(android.graphics.Color.parseColor("#206c7a")))
-                .padding(32.dp)
-                .padding(top = 10.dp),
+                .padding(30.dp),
             contentAlignment = Alignment.Center
         ) {
             Column(
