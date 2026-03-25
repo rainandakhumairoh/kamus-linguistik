@@ -26,6 +26,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.Help
 import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -46,8 +47,13 @@ import androidx.compose.ui.unit.sp
 import com.arabic.kamuslinguistik.R
 import com.arabic.kamuslinguistik.ui.theme.KamusLinguistikTheme
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.outlined.Article
+import androidx.compose.material.icons.outlined.ContactSupport
+import androidx.compose.material.icons.outlined.Help
+import androidx.compose.material.icons.outlined.HelpCenter
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.HelpOutline
+import androidx.compose.material.icons.outlined.Support
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
@@ -165,6 +171,10 @@ fun HomeScreen(navController: NavHostController) {
             onTentangClick = {
                 showSidebar.value = false
                 navController.navigate("TentangApp")
+            },
+            onBantuanClick = {
+                showSidebar.value = false
+                navController.navigate("BantuanApp")
             }
         )
     }
@@ -291,7 +301,8 @@ fun Sidebar(
     onClose: () -> Unit,
     onDisimpanClick: () -> Unit,
     onPetunjukClick: () -> Unit,
-    onTentangClick: () -> Unit
+    onTentangClick: () -> Unit,
+    onBantuanClick: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -356,7 +367,7 @@ fun Sidebar(
 
                 // Petunjuk Aplikasi
                 SidebarMenuItem(
-                    icon = Icons.Outlined.HelpOutline,  // Gunakan icon drawable yang ada
+                    icon = Icons.Outlined.Article,  // Gunakan icon drawable yang ada
                     label = "Petunjuk Aplikasi",
                     onClick = onPetunjukClick
                 )
@@ -366,6 +377,13 @@ fun Sidebar(
                     icon = Icons.Outlined.Info,  // Gunakan icon drawable yang ada
                     label = "Tentang Aplikasi",
                     onClick = onTentangClick
+                )
+
+                // Bantuan Aplikasi
+                SidebarMenuItem(
+                    icon = Icons.Outlined.HelpOutline,  // Gunakan icon drawable yang ada
+                    label = "Bantuan",
+                    onClick = onBantuanClick
                 )
             }
         }

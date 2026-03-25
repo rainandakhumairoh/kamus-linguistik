@@ -5,6 +5,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.arabic.kamuslinguistik.Page.BantuanApp
 import com.arabic.kamuslinguistik.Page.Disimpan
 import com.arabic.kamuslinguistik.Page.HomeScreen
 import com.arabic.kamuslinguistik.Page.ListIstilah1
@@ -101,6 +102,12 @@ fun Navigation(){
 
         composable("TentangApp") {
             TentangApp(
+                navController = navController
+            )
+        }
+
+        composable("BantuanApp") {
+            BantuanApp(
                 navController = navController
             )
         }

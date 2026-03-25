@@ -134,7 +134,9 @@ fun PetunjukApp(navController: NavHostController) {
             Text(
                 text = "- Disimpan: memuat daftar istilah yang tersimpan." +
                         "\n- Petunjuk Aplikasi: memuat petunjuk penggunaan aplikasi." +
-                        "\n- Tentang Aplikasi: memuat informasi tentang aplikasi.",
+                        "\n- Tentang Aplikasi: memuat informasi tentang aplikasi." +
+                        "\n- Bantuan: memuat kontak developer aplikasi.",
+
 
                 textAlign = TextAlign.Left,
                 fontSize = 14.sp,
